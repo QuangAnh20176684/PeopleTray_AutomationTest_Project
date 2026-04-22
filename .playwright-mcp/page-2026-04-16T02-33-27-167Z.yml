@@ -1,0 +1,214 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - text: 
+      - link [ref=e5] [cursor=pointer]:
+        - /url: /TeamTray/Corporate/RedirectToTeamTray
+    - generic [ref=e6]:
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Home" [ref=e9] [cursor=pointer]:
+            - /url: /Production/Home
+        - listitem [ref=e10]:
+          - link "My Tasks" [ref=e11] [cursor=pointer]:
+            - /url: /Workflows/Home
+            - text: My Tasks
+        - listitem [ref=e13]:
+          - link "My Team" [ref=e14] [cursor=pointer]:
+            - /url: "#"
+            - text: My Team
+          - text:  
+        - listitem [ref=e16]:
+          - link "Messages" [ref=e17] [cursor=pointer]:
+            - /url: /Common/Messages/SentMessages
+            - text: Messages
+        - listitem [ref=e19]:
+          - link "People" [ref=e20] [cursor=pointer]:
+            - /url: /Common/PeopleGroups
+        - listitem [ref=e21]:
+          - link "Reports" [ref=e22] [cursor=pointer]:
+            - /url: "#"
+            - text: Reports
+          - text:  
+        - listitem [ref=e24]:
+          - link "Search" [ref=e25] [cursor=pointer]:
+            - /url: /Common/GlobalSearch
+            - text: Search
+        - listitem [ref=e27]:
+          - link "Settings" [ref=e28] [cursor=pointer]:
+            - /url: /Production/Settings
+      - list [ref=e29]:
+        - listitem [ref=e30] [cursor=pointer]:
+          - link "sa@miningpatch.com" [ref=e31]:
+            - /url: "#"
+            - generic [ref=e32]:  
+          - text: 
+      - list [ref=e34]:
+        - listitem [ref=e35]:
+          - link "P" [ref=e36] [cursor=pointer]:
+            - /url: javascript:;
+          - text: 
+      - list [ref=e37]:
+        - listitem [ref=e38]:
+          - link "Production" [ref=e39] [cursor=pointer]:
+            - /url: javascript:;
+            - text: Production
+            - generic [ref=e40]: 
+          - text:          
+  - generic [ref=e41]:
+    - generic [ref=e42]:
+      - text: 
+      - generic [ref=e43]:
+        - generic [ref=e45]:
+          - textbox "Search" [ref=e49]
+          - list [ref=e50]:
+            - listitem [ref=e51]:
+              - link "Add New..." [ref=e52] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e53]: 
+                - generic [ref=e54]: Add New...
+            - listitem [ref=e55]:
+              - link "Incoming Reports" [ref=e56] [cursor=pointer]:
+                - /url: /Common/IncomingReports
+                - generic [ref=e57]: 
+                - generic [ref=e58]: Incoming Reports
+            - listitem [ref=e59]:
+              - link "Shifts" [ref=e60] [cursor=pointer]:
+                - /url: /Workflows/Search/GenericSearchContainer?workflowTypeId=7db01151-28c5-455c-a6c2-6f48252fe2c4&workflowClassificationId=13&workflowProcessId=901c4705-df4b-41f1-9860-11d43fe3dcc4&name=Add%20Shift&menuName=Shifts
+                - generic [ref=e61]: 
+                - generic [ref=e62]: Shifts
+            - listitem [ref=e63]:
+              - link "Movements Summary" [ref=e64] [cursor=pointer]:
+                - /url: /Production/MaterialMovementSummaries/List
+                - generic [ref=e65]: 
+                - generic [ref=e66]: Movements Summary
+            - listitem [ref=e67]:
+              - link "Movements" [ref=e68] [cursor=pointer]:
+                - /url: /Production/MaterialMovements/List
+                - generic [ref=e69]: 
+                - generic [ref=e70]: Movements
+            - listitem [ref=e71]:
+              - link "Upload files" [ref=e72] [cursor=pointer]:
+                - /url: /Production/ProductionUpload
+                - generic [ref=e73]: 
+                - generic [ref=e74]: Upload files
+            - listitem [ref=e75]:
+              - link "PLODs" [ref=e76] [cursor=pointer]:
+                - /url: /Production/PLODs
+                - generic [ref=e77]: 
+                - generic [ref=e78]: PLODs
+            - listitem [ref=e79]:
+              - link "Hole Surveys" [ref=e80] [cursor=pointer]:
+                - /url: /Production/HoleSurveys
+                - generic [ref=e81]: 
+                - generic [ref=e82]: Hole Surveys
+            - listitem [ref=e83]:
+              - link "Drill Bits" [ref=e84] [cursor=pointer]:
+                - /url: /Production/DrillBits
+                - generic [ref=e85]: 
+                - generic [ref=e86]: Drill Bits
+            - listitem [ref=e87]:
+              - link "Charge Sheets" [ref=e88] [cursor=pointer]:
+                - /url: /Production/Chargesheets
+                - generic [ref=e89]: 
+                - generic [ref=e90]: Charge Sheets
+            - listitem [ref=e91]:
+              - link "Invoices" [ref=e92] [cursor=pointer]:
+                - /url: /Production/Invoices/List
+                - generic [ref=e93]: 
+                - generic [ref=e94]: Invoices
+            - listitem [ref=e95]:
+              - link "Contracts" [ref=e96] [cursor=pointer]:
+                - /url: /Production/Contracts/List
+                - generic [ref=e97]: 
+                - generic [ref=e98]: Contracts
+            - listitem [ref=e99]:
+              - link "Contract Plan" [ref=e100] [cursor=pointer]:
+                - /url: /Production/ContractEquipmentPlan
+                - generic [ref=e101]: 
+                - generic [ref=e102]: Contract Plan
+            - listitem [ref=e103]:
+              - link "Equipment Plan" [ref=e104] [cursor=pointer]:
+                - /url: /Production/EquipmentContractPlan
+                - generic [ref=e105]: 
+                - generic [ref=e106]: Equipment Plan
+              - link "Business Plan" [ref=e107] [cursor=pointer]:
+                - /url: /Common/Planning
+                - generic [ref=e108]: 
+                - generic [ref=e109]: Business Plan
+            - listitem [ref=e110]:
+              - link "Submit New..." [ref=e111] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e112]: 
+                - generic [ref=e113]: Submit New...
+            - listitem [ref=e114]:
+              - link "Change Logs" [ref=e115] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e116]: 
+                - generic [ref=e117]: Change Logs
+            - listitem [ref=e118]:
+              - link "Calendar" [ref=e119] [cursor=pointer]:
+                - /url: /Common/Calendar
+                - generic [ref=e120]: 
+                - generic [ref=e121]: Calendar
+            - listitem [ref=e122]:
+              - link "Document Library" [ref=e123] [cursor=pointer]:
+                - /url: /Common/DocumentLibrary
+                - generic [ref=e124]: 
+                - generic [ref=e125]: Document Library
+        - button [ref=e127] [cursor=pointer]:
+          - generic [ref=e128]: 
+    - generic [ref=e129]:
+      - generic [ref=e131]:
+        - generic [ref=e132]:  Filters
+        - generic [ref=e134]:
+          - generic [ref=e135]:
+            - generic [ref=e136]: "Bit Number:"
+            - textbox [ref=e138]
+          - generic [ref=e139]:
+            - generic [ref=e140]: "Equipment:"
+            - generic [ref=e142]:
+              - link "Search Equipment" [ref=e143] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - generic [ref=e144]: Search Equipment
+              - button "Search Equipment" [ref=e146]
+          - generic [ref=e147]:
+            - generic [ref=e148]: "Date Range (Start Date):"
+            - generic [ref=e150]:
+              - textbox [ref=e151]
+              - generic [ref=e153] [cursor=pointer]: 
+            - generic [ref=e154]: To
+            - generic [ref=e156]:
+              - textbox [ref=e157]
+              - generic [ref=e159] [cursor=pointer]: 
+          - generic [ref=e160]:
+            - generic [ref=e161]: "Date Range (Expiry Date):"
+            - generic [ref=e163]:
+              - textbox [ref=e164]
+              - generic [ref=e166] [cursor=pointer]: 
+            - generic [ref=e167]: To
+            - generic [ref=e169]:
+              - textbox [ref=e170]
+              - generic [ref=e172] [cursor=pointer]: 
+          - generic [ref=e174]:
+            - button "Search" [ref=e176] [cursor=pointer]
+            - link "Clear Filters" [ref=e178] [cursor=pointer]:
+              - /url: "#"
+      - generic [ref=e180]:
+        - generic [ref=e184]:
+          - generic [ref=e185]: 
+          - text: Drill Bits
+        - generic [ref=e188]:
+          - generic [ref=e189]: Processing...
+          - grid [ref=e190]:
+            - rowgroup [ref=e191]:
+              - row "Bit Number Start Date Expiry Date Equipment Total Metres" [ref=e192]:
+                - columnheader "Bit Number" [ref=e193] [cursor=pointer]
+                - columnheader "Start Date" [ref=e194] [cursor=pointer]
+                - columnheader "Expiry Date" [ref=e195] [cursor=pointer]
+                - columnheader "Equipment" [ref=e196] [cursor=pointer]
+                - columnheader "Total Metres" [ref=e197] [cursor=pointer]
+            - rowgroup
+          - status
+  - status [ref=e198]
+  - text:                                         

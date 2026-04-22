@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="4dbe25d0-619a-44fd-a7da-f1f8d4fbb9d5" name="@NguyenMac 2026-04-21 14:57:56" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-04-21T14:57:56.7562570+07:00" queuing="2026-04-21T14:57:56.7562570+07:00" start="2026-04-21T14:57:37.0267310+07:00" finish="2026-04-21T14:58:38.9880510+07:00" />
+  <TestSettings name="default" id="c30d0d1e-d0c0-44f2-be2c-269573613bf6">
+    <Deployment runDeploymentRoot="_NguyenMac_2026-04-21_14_57_56" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="6a57b338-6044-4b4a-8d8f-a563142a185a" testId="5bbe3c78-4b53-adc2-d677-74d924a77c59" testName="Test" computerName="NguyenMac" duration="00:00:14.6207040" startTime="2026-04-21T14:58:24.3183230+07:00" endTime="2026-04-21T14:58:38.9388930+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6a57b338-6044-4b4a-8d8f-a563142a185a">
+      <Output>
+        <StdOut>Navigate to: https://staging.peopletray.com
+Perform login...
+Category: Fuel, Name: 0JoLPoduS4_edited, Unit: Days, Cost: 250.5, PartNum: PC001, QRcode: , Description: High quality cement, SubType: 10 inch,10 m3,LPG 95,RC Resharpen Bit,PCS,NC2 BD5,LPG 98,Drums
+Configure
+Category: Fuel, Name: 0xP5I_!@#$%, Unit: Days, Cost: 100, PartNum: SPECIALSy, QRcode: , Description: Special chars test, SubType: RC Hammer,Bit 130mm - 5" 1/8
+Configure
+Category: Fuel, Name: 0XXAEpRblj, Unit: Days, Cost: 123, PartNum: PC001, QRcode: , Description: High quality cement, SubType: Configure
+Category: Fuel, Name: 0YR5dzBmqp, Unit: Days, Cost: -10, PartNum: PC001, QRcode: , Description: EditedDesc_kUh5XpNZfmMjuwky2Qzx, SubType: Configure
+Category: Fuel, Name: 118BObXNZF, Unit: Days, Cost: -10, PartNum: PC001, QRcode: , Description: High quality cement, SubType: Configure
+Category: Fuel, Name: 1TAfNSRx2C, Unit: Days, Cost: 123, PartNum: PC001, QRcode: , Description: High quality cement, SubType: Configure
+Category: Fuel, Name: 1WwNGM5dmI, Unit: Days, Cost: -10, PartNum: , QRcode: , Description: High quality cement, SubType: Configure
+Category: Fuel, Name: 2dDwQCESun, Unit: Days, Cost: -100, PartNum: PC001, QRcode: , Description: Test, SubType: Hammer 4.5
+Configure
+Category: Fuel, Name: 2qV4pqzp8R, Unit: Days, Cost: -10, PartNum: PC001, QRcode: , Description: High quality cement, SubType: Rods,Bit 140mm - 5" 1/2
+Configure
+Category: Fuel, Name: 3aB889fRyS, Unit: Days, Cost: -10, PartNum: PC001, QRcode: , Description: , SubType: Configure
+Category: Fuel, Name: 3sMFEXiEw6, Unit: Shifts, Cost: 100, PartNum: PC001, QRcode: , Description: Test, SubType: Configure
+Category: Fuel, Name: 42mpSS82Jr, Unit: Days, Cost: 99.99, PartNum: PC001, QRcode: , Description: Test, SubType: Configure
+Category: Fuel, Name: 4j9aUrQzI1, Unit: Days, Cost: -10, PartNum: PC001, QRcode: , Description: High quality cement, SubType: Configure
+Category: Fuel, Name: 5i3X9JUJBA, Unit: Days, Cost: -10, PartNum: PC001, QRcode: , Description: High quality cement, SubType: Configure
+Category: Fuel, Name: 5lzQuvQifO, Unit: Days, Cost: -10, PartNum: PC001, QRcode: , Description: , SubType: RC
+Configure</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="59dbff67-a015-4e2d-ab86-1cac424dc3a8" testId="12e2e1de-7ddf-0d0c-c192-949a87581f37" testName="AddStockItemWithValidData" computerName="NguyenMac" duration="00:00:19.1387390" startTime="2026-04-21T14:57:37.5224050+07:00" endTime="2026-04-21T14:57:56.6608980+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="59dbff67-a015-4e2d-ab86-1cac424dc3a8">
+      <Output>
+        <StdOut>Navigate to: https://staging.peopletray.com
+Perform login...
+Checking value: Fuel against filter: Fuel
+Checking value: LTQeOdlSfQ against filter: LTQeOdlSfQ
+Checking value: PC001 against filter: PC001</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="78b46187-4b7d-4fc0-b065-4d5ded57c493" testId="a8fb0c53-dfcd-8439-4c25-2920fb20c18d" testName="EditCostOfActiveStock_NegativeCost" computerName="NguyenMac" duration="00:00:27.6557370" startTime="2026-04-21T14:57:56.6625540+07:00" endTime="2026-04-21T14:58:24.3180480+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="78b46187-4b7d-4fc0-b065-4d5ded57c493">
+      <Output>
+        <StdOut>Navigate to: https://staging.peopletray.com
+Perform login...</StdOut>
+        <ErrorInfo>
+          <Message>  Expected: True
+  But was:  False
+</Message>
+          <StackTrace>   at PeoTest.DemoTest.EditCostOfActiveStock_NegativeCost() in /Users/nguyenquanganh/Peo_Test/src/testSuit/DemoTest/demoTest.cs:line 80
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.&lt;&gt;c__DisplayClass1_0.&lt;Execute&gt;b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+1)    at PeoTest.DemoTest.EditCostOfActiveStock_NegativeCost() in /Users/nguyenquanganh/Peo_Test/src/testSuit/DemoTest/demoTest.cs:line 80
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="Test" storage="/users/nguyenquanganh/peo_test/bin/debug/net8.0/testx.dll" id="5bbe3c78-4b53-adc2-d677-74d924a77c59">
+      <Execution id="6a57b338-6044-4b4a-8d8f-a563142a185a" />
+      <TestMethod codeBase="/Users/nguyenquanganh/Peo_Test/bin/Debug/net8.0/TestX.dll" adapterTypeName="executor://nunit3testexecutor/" className="PeoTest.DemoTest" name="Test" />
+    </UnitTest>
+    <UnitTest name="AddStockItemWithValidData" storage="/users/nguyenquanganh/peo_test/bin/debug/net8.0/testx.dll" id="12e2e1de-7ddf-0d0c-c192-949a87581f37">
+      <Execution id="59dbff67-a015-4e2d-ab86-1cac424dc3a8" />
+      <TestMethod codeBase="/Users/nguyenquanganh/Peo_Test/bin/Debug/net8.0/TestX.dll" adapterTypeName="executor://nunit3testexecutor/" className="PeoTest.DemoTest" name="AddStockItemWithValidData" />
+    </UnitTest>
+    <UnitTest name="EditCostOfActiveStock_NegativeCost" storage="/users/nguyenquanganh/peo_test/bin/debug/net8.0/testx.dll" id="a8fb0c53-dfcd-8439-4c25-2920fb20c18d">
+      <Execution id="78b46187-4b7d-4fc0-b065-4d5ded57c493" />
+      <TestMethod codeBase="/Users/nguyenquanganh/Peo_Test/bin/Debug/net8.0/TestX.dll" adapterTypeName="executor://nunit3testexecutor/" className="PeoTest.DemoTest" name="EditCostOfActiveStock_NegativeCost" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="5bbe3c78-4b53-adc2-d677-74d924a77c59" executionId="6a57b338-6044-4b4a-8d8f-a563142a185a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="12e2e1de-7ddf-0d0c-c192-949a87581f37" executionId="59dbff67-a015-4e2d-ab86-1cac424dc3a8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a8fb0c53-dfcd-8439-4c25-2920fb20c18d" executionId="78b46187-4b7d-4fc0-b065-4d5ded57c493" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="3" executed="3" passed="2" failed="1" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 4.5.0.0: Test execution started
+Running selected tests in /Users/nguyenquanganh/Peo_Test/bin/Debug/net8.0/TestX.dll
+   NUnit3TestExecutor discovered 3 of 3 NUnit test cases using Current Discovery mode, Non-Explicit run
+NUnit Adapter 4.5.0.0: Test execution complete
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="NguyenMac" outcome="Warning" timestamp="2026-04-21T14:57:56.7065010+07:00">
+        <Text>Navigate to: https://staging.peopletray.com
+Perform login...
+Checking value: Fuel against filter: Fuel
+Checking value: LTQeOdlSfQ against filter: LTQeOdlSfQ
+Checking value: PC001 against filter: PC001
+</Text>
+      </RunInfo>
+      <RunInfo computerName="NguyenMac" outcome="Warning" timestamp="2026-04-21T14:58:24.3498600+07:00">
+        <Text>Navigate to: https://staging.peopletray.com
+Perform login...
+</Text>
+      </RunInfo>
+      <RunInfo computerName="NguyenMac" outcome="Warning" timestamp="2026-04-21T14:58:38.9398610+07:00">
+        <Text>Navigate to: https://staging.peopletray.com
+Perform login...
+Category: Fuel, Name: 0JoLPoduS4_edited, Unit: Days, Cost: 250.5, PartNum: PC001, QRcode: , Description: High quality cement, SubType: 10 inch,10 m3,LPG 95,RC Resharpen Bit,PCS,NC2 BD5,LPG 98,Drums
+Configure
+Category: Fuel, Name: 0xP5I_!@#$%, Unit: Days, Cost: 100, PartNum: SPECIALSy, QRcode: , Description: Special chars test, SubType: RC Hammer,Bit 130mm - 5" 1/8
+Configure
+Category: Fuel, Name: 0XXAEpRblj, Unit: Days, Cost: 123, PartNum: PC001, QRcode: , Description: High quality cement, SubType: Configure
+Category: Fuel, Name: 0YR5dzBmqp, Unit: Days, Cost: -10, PartNum: PC001, QRcode: , Description: EditedDesc_kUh5XpNZfmMjuwky2Qzx, SubType: Configure
+Category: Fuel, Name: 118BObXNZF, Unit: Days, Cost: -10, PartNum: PC001, QRcode: , Description: High quality cement, SubType: Configure
+Category: Fuel, Name: 1TAfNSRx2C, Unit: Days, Cost: 123, PartNum: PC001, QRcode: , Description: High quality cement, SubType: Configure
+Category: Fuel, Name: 1WwNGM5dmI, Unit: Days, Cost: -10, PartNum: , QRcode: , Description: High quality cement, SubType: Configure
+Category: Fuel, Name: 2dDwQCESun, Unit: Days, Cost: -100, PartNum: PC001, QRcode: , Description: Test, SubType: Hammer 4.5
+Configure
+Category: Fuel, Name: 2qV4pqzp8R, Unit: Days, Cost: -10, PartNum: PC001, QRcode: , Description: High quality cement, SubType: Rods,Bit 140mm - 5" 1/2
+Configure
+Category: Fuel, Name: 3aB889fRyS, Unit: Days, Cost: -10, PartNum: PC001, QRcode: , Description: , SubType: Configure
+Category: Fuel, Name: 3sMFEXiEw6, Unit: Shifts, Cost: 100, PartNum: PC001, QRcode: , Description: Test, SubType: Configure
+Category: Fuel, Name: 42mpSS82Jr, Unit: Days, Cost: 99.99, PartNum: PC001, QRcode: , Description: Test, SubType: Configure
+Category: Fuel, Name: 4j9aUrQzI1, Unit: Days, Cost: -10, PartNum: PC001, QRcode: , Description: High quality cement, SubType: Configure
+Category: Fuel, Name: 5i3X9JUJBA, Unit: Days, Cost: -10, PartNum: PC001, QRcode: , Description: High quality cement, SubType: Configure
+Category: Fuel, Name: 5lzQuvQifO, Unit: Days, Cost: -10, PartNum: PC001, QRcode: , Description: , SubType: RC
+Configure
+</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>

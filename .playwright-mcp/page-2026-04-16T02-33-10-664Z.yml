@@ -1,0 +1,457 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - text: 
+      - link [ref=e5] [cursor=pointer]:
+        - /url: /TeamTray/Corporate/RedirectToTeamTray
+    - generic [ref=e6]:
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Home" [ref=e9] [cursor=pointer]:
+            - /url: /TeamTray/CustomHome
+        - listitem [ref=e10]:
+          - link "My Tasks" [ref=e11] [cursor=pointer]:
+            - /url: /Workflows/Home
+            - text: My Tasks
+        - listitem [ref=e13]:
+          - link "My Team" [ref=e14] [cursor=pointer]:
+            - /url: "#"
+            - text: My Team
+          - text:  
+        - listitem [ref=e16]:
+          - link "Messages" [ref=e17] [cursor=pointer]:
+            - /url: /Common/Messages/SentMessages
+            - text: Messages
+        - listitem [ref=e19]:
+          - link "People" [ref=e20] [cursor=pointer]:
+            - /url: /Common/PeopleGroups
+        - listitem [ref=e21]:
+          - link "Reports" [ref=e22] [cursor=pointer]:
+            - /url: "#"
+            - text: Reports
+          - text:  
+        - listitem [ref=e24]:
+          - link "Search" [ref=e25] [cursor=pointer]:
+            - /url: /Common/GlobalSearch
+            - text: Search
+        - listitem [ref=e27]:
+          - link "Settings" [ref=e28] [cursor=pointer]:
+            - /url: /Administration/Settings
+      - list [ref=e29]:
+        - listitem [ref=e30] [cursor=pointer]:
+          - link "sa@miningpatch.com" [ref=e31]:
+            - /url: "#"
+            - generic [ref=e32]:  
+          - text: 
+      - list [ref=e34]:
+        - listitem [ref=e35]:
+          - link "P" [ref=e36] [cursor=pointer]:
+            - /url: javascript:;
+          - text: 
+      - list [ref=e37]:
+        - listitem [ref=e38]:
+          - link "TeamTray" [ref=e39] [cursor=pointer]:
+            - /url: javascript:;
+            - text: TeamTray
+            - generic [ref=e40]: 
+          - text:          
+  - generic [ref=e41]:
+    - generic [ref=e42]:
+      - text: 
+      - generic [ref=e43]:
+        - generic [ref=e45]:
+          - textbox "Search People" [ref=e49]
+          - list [ref=e50]:
+            - listitem [ref=e51]:
+              - link "Add New..." [ref=e52] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e53]: 
+                - generic [ref=e54]: Add New...
+            - listitem [ref=e55]:
+              - link "Announcements" [ref=e56] [cursor=pointer]:
+                - /url: /Common/Announcements
+                - generic [ref=e57]: 
+                - generic [ref=e58]: Announcements
+            - listitem [ref=e59]:
+              - link "People" [ref=e60] [cursor=pointer]:
+                - /url: /Common/PeopleGroups
+                - generic [ref=e61]: 
+                - generic [ref=e62]: People
+            - listitem [ref=e63]:
+              - link "Crew Plan" [ref=e64] [cursor=pointer]:
+                - /url: /common/assetcrew
+                - generic [ref=e65]: 
+                - generic [ref=e66]: Crew Plan
+            - listitem [ref=e67]:
+              - link "Rosters" [ref=e68] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e69]: 
+                - generic [ref=e70]: Rosters
+            - listitem [ref=e71]:
+              - link "Flights" [ref=e72] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e73]:  
+                - generic [ref=e74]: Flights
+            - listitem [ref=e75]:
+              - link "Rooms" [ref=e76] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e77]: 
+                - generic [ref=e78]: Rooms
+            - listitem [ref=e79]:
+              - link "Group Travel" [ref=e80] [cursor=pointer]:
+                - /url: /TeamTray/GroupRequirements/List
+                - generic [ref=e81]: 
+                - generic [ref=e82]: Group Travel
+            - listitem [ref=e83]:
+              - link "Incoming Reports" [ref=e84] [cursor=pointer]:
+                - /url: /Common/IncomingReports
+                - generic [ref=e85]: 
+                - generic [ref=e86]: Incoming Reports
+            - listitem [ref=e87]:
+              - link "View Activity Reports" [ref=e88] [cursor=pointer]:
+                - /url: /Workflows/Search/GenericSearchContainer?workflowTypeId=605c5640-c6a0-4bbd-a93e-3a1f7b834a2a&workflowClassificationId=2&workflowProcessId=7ca4cf64-50cf-4c3d-8c60-26d8d0f32e58&name=Activity%20Report&menuName=View%20Activity%20Reports
+                - generic [ref=e89]: 
+                - generic [ref=e90]: View Activity Reports
+            - listitem [ref=e91]:
+              - link "Leave/Change Requests" [ref=e92] [cursor=pointer]:
+                - /url: /Workflows/Search/GenericSearchContainer?workflowTypeId=96fd5141-c272-439f-a87f-48a209932f62&workflowClassificationId=14&workflowProcessId=03dcce66-672a-4ed6-a679-e5c8f0fc6897&name=Leave%2FChange%20Request&menuName=Leave%2FChange%20Requests
+                - generic [ref=e93]: 
+                - generic [ref=e94]: Leave/Change Requests
+            - listitem [ref=e95]:
+              - link "Approvals" [ref=e96] [cursor=pointer]:
+                - /url: /Workflows/Search/GenericSearchContainer?workflowTypeId=d1031b0b-bac3-4c78-9e32-e3673022aed8&workflowClassificationId=3&workflowProcessId=e4ed8a21-aaca-4b22-a426-b0f247e57142&name=Purchase%20Request&menuName=Approvals
+                - generic [ref=e97]: 
+                - generic [ref=e98]: Approvals
+            - listitem [ref=e99]:
+              - link "View Travel Requests" [ref=e100] [cursor=pointer]:
+                - /url: /Workflows/Search/GenericSearchContainer?workflowTypeId=88ce0686-c3cc-4de7-83c9-941d0d9729fa&workflowClassificationId=12&workflowProcessId=b252c4d3-a3ae-43c9-afbd-6cd4cace595e&name=Travel%20Request&menuName=View%20Travel%20Requests
+                - generic [ref=e101]: 
+                - generic [ref=e102]: View Travel Requests
+            - listitem [ref=e103]:
+              - link "Training" [ref=e104] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e105]: 
+                - generic [ref=e106]: Training
+            - listitem [ref=e107]:
+              - link "Courses" [ref=e108] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e109]: 
+                - generic [ref=e110]: Courses
+            - listitem [ref=e111]:
+              - link "Journeys" [ref=e112] [cursor=pointer]:
+                - /url: /Workflows/JourneyManagement
+                - generic [ref=e113]: 
+                - generic [ref=e114]: Journeys
+            - listitem [ref=e115]:
+              - link "Submit New..." [ref=e116] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e117]: 
+                - generic [ref=e118]: Submit New...
+            - listitem [ref=e119]:
+              - link "Change Logs" [ref=e120] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e121]: 
+                - generic [ref=e122]: Change Logs
+            - listitem [ref=e123]:
+              - link "Calendar" [ref=e124] [cursor=pointer]:
+                - /url: /Common/Calendar
+                - generic [ref=e125]: 
+                - generic [ref=e126]: Calendar
+            - listitem [ref=e127]:
+              - link "Document Library" [ref=e128] [cursor=pointer]:
+                - /url: /Common/DocumentLibrary
+                - generic [ref=e129]: 
+                - generic [ref=e130]: Document Library
+        - button [ref=e132] [cursor=pointer]:
+          - generic [ref=e133]: 
+    - generic [ref=e134]:
+      - generic [ref=e136]:
+        - generic [ref=e137]:  Filters
+        - generic [ref=e139]:
+          - generic [ref=e141]:
+            - button "Search" [ref=e143] [cursor=pointer]
+            - text: Clear Filters
+          - generic [ref=e144]:
+            - generic [ref=e145]: "Person / Emp ID / Username:"
+            - textbox [active] [ref=e147]
+          - generic [ref=e148]:
+            - generic [ref=e149]: "Team Selector:"
+            - generic:
+              - generic:
+                - list [ref=e152]:
+                  - listitem [ref=e153]:
+                    - textbox [ref=e155]: Search Team
+                - generic [ref=e158] [cursor=pointer]: 
+          - generic [ref=e159]:
+            - generic [ref=e160]: "Workgroup:"
+            - generic [ref=e164] [cursor=pointer]:
+              - generic [ref=e165]:
+                - combobox [ref=e166]
+                - generic: Search Workgroups
+              - generic [ref=e167]:
+                - text: 
+                - button "Select" [ref=e168]:
+                  - button [ref=e170]:
+                    - generic [ref=e171]: 
+          - generic [ref=e172]:
+            - generic [ref=e173]: "Worksite:"
+            - generic [ref=e175]:
+              - link "WorkSite" [ref=e176] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - generic [ref=e177]: WorkSite
+              - button "WorkSite" [ref=e179]
+          - generic [ref=e180]:
+            - generic [ref=e181]: "Work Role:"
+            - generic [ref=e185] [cursor=pointer]:
+              - generic [ref=e186]:
+                - combobox [ref=e187]
+                - generic: Search Work Roles
+              - generic [ref=e188]:
+                - text: 
+                - button "Select" [ref=e189]:
+                  - button [ref=e191]:
+                    - generic [ref=e192]: 
+          - generic [ref=e193]:
+            - generic [ref=e194]: "Job Title:"
+            - generic [ref=e196]:
+              - link "Search Job Title" [ref=e197] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - generic [ref=e198]: Search Job Title
+              - button "Search Job Title" [ref=e200]
+          - generic [ref=e201]:
+            - generic [ref=e202]: "Gender:"
+            - generic [ref=e204]:
+              - link "Search Gender" [ref=e205] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - generic [ref=e206]: Search Gender
+              - button "Search Gender" [ref=e208]
+          - generic [ref=e209]:
+            - generic [ref=e210]: "Area:"
+            - combobox [ref=e212]:
+              - option [selected]
+              - option "Country"
+              - option "East"
+              - option "North"
+              - option "South"
+              - option "Titeline Drilling Australia"
+          - generic [ref=e213]:
+            - generic [ref=e214]: "Employer:"
+            - generic [ref=e216]:
+              - link "Search Employer" [ref=e217] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - generic [ref=e218]: Search Employer
+              - button "Search Employer" [ref=e220]
+          - generic [ref=e221]:
+            - generic [ref=e222]: Company
+            - generic [ref=e224]:
+              - link "Search Contractors" [ref=e225] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - generic [ref=e226]: Search Contractors
+              - button "Search Contractors" [ref=e228]
+          - generic [ref=e229]:
+            - generic [ref=e230]: "Employment Type:"
+            - combobox [ref=e232]:
+              - option [selected]
+              - option "Contractor"
+              - option "Full time"
+              - option "Part time"
+              - option "Permanent"
+              - option "Visitor"
+          - generic [ref=e233]:
+            - generic [ref=e234]: "Competency Status:"
+            - combobox [ref=e236]:
+              - option [selected]
+              - option "Expired"
+              - option "Required"
+              - option "Exempt"
+              - option "Re-enrol"
+              - option "Hold"
+              - option "Credit Transfer"
+              - option "DNA"
+              - option "Not Yet Competent"
+              - option "Competency Pending"
+              - option "Competent"
+              - option "Completed"
+              - option "WR Requirement"
+          - generic [ref=e237]:
+            - generic [ref=e238]: "Person Alerts:"
+            - combobox [ref=e240]:
+              - option [selected]
+              - option "Anxiety Attacks"
+              - option "Bee Allergy"
+              - option "Peanut Allergy"
+              - option "Test_alert"
+              - option "Test2223"
+              - option "Test2337"
+          - generic [ref=e241]:
+            - generic [ref=e242]: "Locked Status:"
+            - combobox [ref=e244]:
+              - option [selected]
+              - option "Do Not Rehire"
+              - option "Locked Out"
+              - option "No Site Access"
+              - option "Not Locked Out"
+              - option "Override Locked Out"
+          - generic [ref=e245]:
+            - generic [ref=e246]: COVID-19 Vaccination Information
+            - combobox [ref=e248]:
+              - option [selected]
+              - option "1st Shot Received"
+              - option "2nd Shot Received"
+              - option "Booster Received"
+              - option "Applying for an exemption"
+              - option "Doesn’t intend getting vaccinated"
+          - generic [ref=e249]:
+            - generic [ref=e250]: Indigenous
+            - combobox [ref=e252]:
+              - option [selected]
+              - option "Yes"
+          - generic [ref=e253]:
+            - generic [ref=e254]: Previous FO
+            - combobox [ref=e256]:
+              - option [selected]
+              - option "John Ryan"
+              - option "Julie Mackwell"
+              - option "Honnen McCabe"
+              - option "Brogan Mitchell"
+          - generic [ref=e257]:
+            - generic [ref=e258]: White Card No.
+            - textbox [ref=e260]
+          - generic [ref=e261]:
+            - generic [ref=e262]: Federal Government Employer Funding
+            - combobox [ref=e264]:
+              - option [selected]
+              - option "AAIS"
+              - option "BAC CAC"
+              - option "CC"
+              - option "HI"
+          - generic [ref=e265]:
+            - generic [ref=e267]:
+              - checkbox "Include Inactive" [ref=e268]
+              - text: Include Inactive
+            - generic [ref=e270]:
+              - checkbox "Display Inactive Only" [ref=e271]
+              - text: Display Inactive Only
+            - generic [ref=e273]:
+              - checkbox "WG Override" [ref=e274]
+              - text: WG Override
+          - generic [ref=e275]: More Filters
+          - text:  
+          - generic [ref=e277]:
+            - button "Search" [ref=e279] [cursor=pointer]
+            - text: Clear Filters
+      - generic [ref=e281]:
+        - generic [ref=e283]:
+          - generic [ref=e284]:
+            - generic [ref=e286]: 
+            - text: People
+          - generic [ref=e288]:
+            - link "Competencies" [ref=e289] [cursor=pointer]:
+              - /url: /common/peoplecompetencies
+            - link "Documents" [ref=e290] [cursor=pointer]:
+              - /url: /Common/DocumentList
+        - generic [ref=e292]:
+          - link "A |" [ref=e293] [cursor=pointer]:
+            - /url: "#"
+          - link "B |" [ref=e294] [cursor=pointer]:
+            - /url: "#"
+          - link "C |" [ref=e295] [cursor=pointer]:
+            - /url: "#"
+          - link "D |" [ref=e296] [cursor=pointer]:
+            - /url: "#"
+          - link "E |" [ref=e297] [cursor=pointer]:
+            - /url: "#"
+          - link "F |" [ref=e298] [cursor=pointer]:
+            - /url: "#"
+          - link "G |" [ref=e299] [cursor=pointer]:
+            - /url: "#"
+          - link "H |" [ref=e300] [cursor=pointer]:
+            - /url: "#"
+          - link "I |" [ref=e301] [cursor=pointer]:
+            - /url: "#"
+          - link "J |" [ref=e302] [cursor=pointer]:
+            - /url: "#"
+          - link "K |" [ref=e303] [cursor=pointer]:
+            - /url: "#"
+          - link "L |" [ref=e304] [cursor=pointer]:
+            - /url: "#"
+          - link "M |" [ref=e305] [cursor=pointer]:
+            - /url: "#"
+          - link "N |" [ref=e306] [cursor=pointer]:
+            - /url: "#"
+          - link "O |" [ref=e307] [cursor=pointer]:
+            - /url: "#"
+          - link "P |" [ref=e308] [cursor=pointer]:
+            - /url: "#"
+          - link "Q |" [ref=e309] [cursor=pointer]:
+            - /url: "#"
+          - link "R |" [ref=e310] [cursor=pointer]:
+            - /url: "#"
+          - link "S |" [ref=e311] [cursor=pointer]:
+            - /url: "#"
+          - link "T |" [ref=e312] [cursor=pointer]:
+            - /url: "#"
+          - link "U |" [ref=e313] [cursor=pointer]:
+            - /url: "#"
+          - link "V |" [ref=e314] [cursor=pointer]:
+            - /url: "#"
+          - link "W |" [ref=e315] [cursor=pointer]:
+            - /url: "#"
+          - link "X |" [ref=e316] [cursor=pointer]:
+            - /url: "#"
+          - link "Y |" [ref=e317] [cursor=pointer]:
+            - /url: "#"
+          - link "Z |" [ref=e318] [cursor=pointer]:
+            - /url: "#"
+          - link "All" [ref=e319] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e323]:
+          - generic [ref=e324]:
+            - button "People" [ref=e325] [cursor=pointer]
+            - button "Compliance/Competence" [ref=e326] [cursor=pointer]
+          - generic [ref=e328]:
+            - text: "Sort By:"
+            - 'checkbox "Sort By: New Profiles" [ref=e329]'
+            - text: New Profiles
+        - generic [ref=e333]:
+          - generic [ref=e334]: Processing...
+          - generic [ref=e335]:
+            - grid [ref=e338]:
+              - rowgroup [ref=e339]:
+                - 'row "Name: activate to sort column descending Workgroup: activate to sort column ascending Job Title: activate to sort column ascending Work roles Compliance Status Competency Status Phone: activate to sort column ascending" [ref=e340]':
+                  - 'columnheader "Name: activate to sort column descending" [ref=e341] [cursor=pointer]': Name
+                  - 'columnheader "Workgroup: activate to sort column ascending" [ref=e342] [cursor=pointer]': Workgroup
+                  - 'columnheader "Job Title: activate to sort column ascending" [ref=e343] [cursor=pointer]': Job Title
+                  - columnheader "Work roles" [ref=e344]
+                  - columnheader "Compliance Status" [ref=e345]
+                  - columnheader "Competency Status" [ref=e346]
+                  - 'columnheader "Phone: activate to sort column ascending" [ref=e347] [cursor=pointer]': Phone
+            - grid [ref=e349]:
+              - rowgroup:
+                - 'row "Name: activate to sort column descending Workgroup: activate to sort column ascending Job Title: activate to sort column ascending Work roles Compliance Status Competency Status Phone: activate to sort column ascending"':
+                  - 'columnheader "Name: activate to sort column descending"':
+                    - generic: Name
+                  - 'columnheader "Workgroup: activate to sort column ascending"':
+                    - generic: Workgroup
+                  - 'columnheader "Job Title: activate to sort column ascending"':
+                    - generic: Job Title
+                  - columnheader "Work roles":
+                    - generic: Work roles
+                  - columnheader "Compliance Status":
+                    - generic: Compliance Status
+                  - columnheader "Competency Status":
+                    - generic: Competency Status
+                  - 'columnheader "Phone: activate to sort column ascending"':
+                    - generic: Phone
+              - rowgroup [ref=e350]:
+                - row "No data available in table" [ref=e351]:
+                  - gridcell "No data available in table" [ref=e352]
+          - status [ref=e353]: Showing 0 to 0 of 0 entries
+          - generic [ref=e354]:
+            - generic [ref=e355]: First
+            - generic [ref=e356]: Previous
+            - generic [ref=e357]: Next
+            - generic [ref=e358]: Last
+  - status [ref=e359]
+  - status [ref=e360]
+  - text:                     

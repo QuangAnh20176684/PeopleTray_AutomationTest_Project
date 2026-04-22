@@ -1,0 +1,33 @@
+name: Run Playwright Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.0.x'
+
+    - name: Restore
+      run: dotnet restore
+
+    - name: Build
+      run: dotnet build --no-restore
+
+    - name: Install Playwright browsers
+      run: pwsh bin/Debug/net8.0/playwright.ps1 install
+
+  
+
+    - name: Run specific test class
+      run: ./run-by-module.sh

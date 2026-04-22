@@ -1,0 +1,12 @@
+{
+  "allure": {
+    "allureDirectory": "allure-results",
+    "cleanupArtifactDirectory": true,
+    "links": [
+      {
+        "pattern": "https://github.com/allure-framework/allure-csharp/issues/%s",
+        "type": "issue"
+      }
+    ]
+  }
+}

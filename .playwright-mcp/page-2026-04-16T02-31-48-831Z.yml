@@ -1,0 +1,45 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e8]:
+      - generic [ref=e10]:
+        - img [ref=e11]
+        - heading "Sign In" [level=4] [ref=e12]
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - textbox "Username" [active] [ref=e18]
+          - textbox "Password" [ref=e21]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - generic [ref=e26] [cursor=pointer]:
+              - generic [ref=e27]:
+                - checkbox "Keep me signed in" [ref=e28]
+                - insertion [ref=e29]
+              - text: Keep me signed in
+            - generic [ref=e30]:
+              - button "Sign me in" [ref=e31] [cursor=pointer]
+              - generic [ref=e32]:
+                - generic [ref=e33]: By clicking Sign me in, you agree to
+                - generic [ref=e34]: PeopleTray's Software Subscription Agreement
+          - link "Trouble signing in?" [ref=e37] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e38]:
+            - generic:
+              - generic:
+                - list
+    - generic [ref=e40]:
+      - link "PeopleTray" [ref=e41] [cursor=pointer]:
+        - /url: http://www.peopletray.com
+        - strong [ref=e42]: PeopleTray
+      - text: "|"
+      - link "Contact" [ref=e43] [cursor=pointer]:
+        - /url: http://www.peopletray.com/contact/
+      - text: "|"
+      - link "About Us" [ref=e44] [cursor=pointer]:
+        - /url: http://www.peopletray.com/
+      - text: "|"
+      - link "Software Subscription Agreement" [ref=e45] [cursor=pointer]:
+        - /url: http://www.peopletray.com/terms-conditions/
+      - text: "|"
+      - link "Privacy Statement" [ref=e46] [cursor=pointer]:
+        - /url: http://www.peopletray.com/privacy-statement/
+  - text: 

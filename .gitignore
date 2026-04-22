@@ -1,0 +1,7 @@
+bin/
+obj/
+**/.playwright/
+.playwright/
+allure-report/
+*.log
+.DS_Store

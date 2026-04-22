@@ -1,0 +1,169 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - text: 
+      - link [ref=e5] [cursor=pointer]:
+        - /url: /TeamTray/Corporate/RedirectToTeamTray
+    - generic [ref=e6]:
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Home" [ref=e9] [cursor=pointer]:
+            - /url: /Production/Home
+        - listitem [ref=e10]:
+          - link "My Tasks" [ref=e11] [cursor=pointer]:
+            - /url: /Workflows/Home
+            - text: My Tasks
+        - listitem [ref=e13]:
+          - link "My Team" [ref=e14] [cursor=pointer]:
+            - /url: "#"
+            - text: My Team
+          - text:  
+        - listitem [ref=e16]:
+          - link "Messages" [ref=e17] [cursor=pointer]:
+            - /url: /Common/Messages/SentMessages
+            - text: Messages
+        - listitem [ref=e19]:
+          - link "People" [ref=e20] [cursor=pointer]:
+            - /url: /Common/PeopleGroups
+        - listitem [ref=e21]:
+          - link "Reports" [ref=e22] [cursor=pointer]:
+            - /url: "#"
+            - text: Reports
+          - text:  
+        - listitem [ref=e24]:
+          - link "Search" [ref=e25] [cursor=pointer]:
+            - /url: /Common/GlobalSearch
+            - text: Search
+        - listitem [ref=e27]:
+          - link "Settings" [ref=e28] [cursor=pointer]:
+            - /url: /Production/Settings
+      - list [ref=e29]:
+        - listitem [ref=e30] [cursor=pointer]:
+          - link "" [ref=e31]:
+            - /url: "#"
+            - generic [ref=e32]: 
+          - text: 
+      - list [ref=e34]:
+        - listitem [ref=e35]:
+          - link "P" [ref=e36] [cursor=pointer]:
+            - /url: javascript:;
+          - text: 
+      - list [ref=e37]:
+        - listitem [ref=e38]:
+          - link "Production " [ref=e39] [cursor=pointer]:
+            - /url: javascript:;
+            - text: Production
+            - generic [ref=e40]: 
+          - text: 
+  - generic [ref=e41]:
+    - generic [ref=e42]:
+      - text: 
+      - generic:
+        - list [ref=e45]:
+          - listitem [ref=e46]:
+            - link " Add New..." [ref=e47] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e48]: 
+              - generic: Add New...
+          - listitem [ref=e49]:
+            - link " Incoming Reports" [ref=e50] [cursor=pointer]:
+              - /url: /Common/IncomingReports
+              - generic [ref=e51]: 
+              - generic: Incoming Reports
+          - listitem [ref=e52]:
+            - link " Shifts" [ref=e53] [cursor=pointer]:
+              - /url: /Workflows/Search/GenericSearchContainer?workflowTypeId=7db01151-28c5-455c-a6c2-6f48252fe2c4&workflowClassificationId=13&workflowProcessId=901c4705-df4b-41f1-9860-11d43fe3dcc4&name=Add%20Shift&menuName=Shifts
+              - generic [ref=e54]: 
+              - generic: Shifts
+          - listitem [ref=e55]:
+            - link " Movements Summary" [ref=e56] [cursor=pointer]:
+              - /url: /Production/MaterialMovementSummaries/List
+              - generic [ref=e57]: 
+              - generic: Movements Summary
+          - listitem [ref=e58]:
+            - link " Movements" [ref=e59] [cursor=pointer]:
+              - /url: /Production/MaterialMovements/List
+              - generic [ref=e60]: 
+              - generic: Movements
+          - listitem [ref=e61]:
+            - link " Upload files" [ref=e62] [cursor=pointer]:
+              - /url: /Production/ProductionUpload
+              - generic [ref=e63]: 
+              - generic: Upload files
+          - listitem [ref=e64]:
+            - link " PLODs" [ref=e65] [cursor=pointer]:
+              - /url: /Production/PLODs
+              - generic [ref=e66]: 
+              - generic: PLODs
+          - listitem [ref=e67]:
+            - link "Hole Surveys" [ref=e68] [cursor=pointer]:
+              - /url: /Production/HoleSurveys
+              - generic: Hole Surveys
+          - listitem [ref=e69]:
+            - link "Drill Bits" [ref=e70] [cursor=pointer]:
+              - /url: /Production/DrillBits
+              - generic: Drill Bits
+          - listitem [ref=e71]:
+            - link "Charge Sheets" [ref=e72] [cursor=pointer]:
+              - /url: /Production/Chargesheets
+              - generic: Charge Sheets
+          - listitem [ref=e73]:
+            - link "Invoices" [ref=e74] [cursor=pointer]:
+              - /url: /Production/Invoices/List
+              - generic: Invoices
+          - listitem [ref=e75]:
+            - link " Contracts" [ref=e76] [cursor=pointer]:
+              - /url: /Production/Contracts/List
+              - generic [ref=e77]: 
+              - generic: Contracts
+          - listitem [ref=e78]:
+            - link "Contract Plan" [ref=e79] [cursor=pointer]:
+              - /url: /Production/ContractEquipmentPlan
+              - generic: Contract Plan
+          - listitem [ref=e80]:
+            - link "Equipment Plan" [ref=e81] [cursor=pointer]:
+              - /url: /Production/EquipmentContractPlan
+              - generic: Equipment Plan
+            - link "Business Plan" [ref=e82] [cursor=pointer]:
+              - /url: /Common/Planning
+              - generic: Business Plan
+          - listitem [ref=e83]:
+            - link " Submit New..." [ref=e84] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e85]: 
+              - generic: Submit New...
+          - listitem [ref=e86]:
+            - link " Change Logs" [ref=e87] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e88]: 
+              - generic: Change Logs
+          - listitem [ref=e89]:
+            - link " Calendar" [ref=e90] [cursor=pointer]:
+              - /url: /Common/Calendar
+              - generic [ref=e91]: 
+              - generic: Calendar
+          - listitem [ref=e92]:
+            - link " Document Library" [ref=e93] [cursor=pointer]:
+              - /url: /Common/DocumentLibrary
+              - generic [ref=e94]: 
+              - generic: Document Library
+        - button "" [ref=e98] [cursor=pointer]:
+          - generic [ref=e99]: 
+    - generic [ref=e102]:
+      - generic [ref=e103]:
+        - text: 
+        - heading "Settings" [level=2] [ref=e104]
+      - list [ref=e105]:
+        - listitem [ref=e106]:
+          - generic [ref=e107] [cursor=pointer]:
+            - generic [ref=e108]: 
+            - text: Production Settings
+      - list [ref=e109]:
+        - listitem [ref=e110]:
+          - generic [ref=e111] [cursor=pointer]:
+            - generic [ref=e112]: 
+            - text: Movements Settings
+      - link "More Settings" [ref=e114] [cursor=pointer]:
+        - /url: /Administration/Settings
+    - generic [ref=e118]: Select options from left menu
+  - text: 
