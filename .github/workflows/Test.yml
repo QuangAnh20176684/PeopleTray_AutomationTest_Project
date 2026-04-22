@@ -1,9 +1,12 @@
 name: Run Playwright Tests
 
 on:
-  push:
-    branches: [ main ]
-  pull_request:
+  # push:
+  #   branches: [ main ]
+  # pull_request:
+    workflow_dispatch:   # cho phép bấm chạy tay
+    schedule:
+    - cron: '0 19 * * 3'
 
 jobs:
   test:

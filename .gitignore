@@ -5,3 +5,5 @@ obj/
 allure-report/
 *.log
 .DS_Store
+.playwright-mcp/
+playwright-results/
