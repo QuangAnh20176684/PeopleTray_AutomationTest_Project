@@ -81,6 +81,31 @@ public class DemoTest : CommonBaseTest
 
 
 
+    }
+    
+    
+    [Test]
+    public async Task EditPartNumberOfActiveStock_ValidPartNumber()
+    // to valid value
+
+    {
+        StockCataloguePage stockCataloguePage = new StockCataloguePage(_page);
+        await _page.GetByText("bruhhh").ClickAsync();
+        var randomName = generateHelper.GenerateRandomString(10);
+        var newPartNum = generateHelper.GenerateRandomString(20, "EditedPNumber_");
+        await stockCataloguePage.addStockItem("Fuel", randomName, "Days", "-10", "PC001", "1234567890123", "High quality cement", true);
+        await _page.WaitForTimeoutAsync(500);
+        await stockCataloguePage.nameFilter(randomName);
+        await stockCataloguePage.Search();
+        await stockCataloguePage.editInformationOfStockItem("PartNum", newPartNum, true, true);
+
+
+        await stockCataloguePage.nameFilter(randomName);
+        await stockCataloguePage.Search();
+
+        Assert.IsTrue(Equals(newPartNum, await _page.Locator("//table[@id='tblConsumable']//tbody//tr[1]//td[4]").InnerTextAsync()));
+
 
     }
     }
+    
