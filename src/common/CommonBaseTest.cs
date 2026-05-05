@@ -25,7 +25,7 @@ public class CommonBaseTest
 
         _browser = await _playwright.Chromium.LaunchAsync(new BrowserTypeLaunchOptions
         {
-            Headless =  true, // ✅ chạy ngầm
+            Headless =  false, // ✅ chạy ngầm
             SlowMo = 0
         });
 

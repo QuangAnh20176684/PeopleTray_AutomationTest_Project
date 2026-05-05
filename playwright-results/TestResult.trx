@@ -1,26 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TestRun id="04cefe51-e421-493f-8dc4-3cc850d7f97a" name="@NguyenMac 2026-04-24 10:46:16" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
-  <Times creation="2026-04-24T10:46:16.1434090+07:00" queuing="2026-04-24T10:46:16.1434090+07:00" start="2026-04-24T10:45:31.4067250+07:00" finish="2026-04-24T10:46:16.1475910+07:00" />
-  <TestSettings name="default" id="70fcc703-971a-43b8-aa3c-c00a52edbd9b">
-    <Deployment runDeploymentRoot="_NguyenMac_2026-04-24_10_46_16" />
+<TestRun id="972cb5cf-85ad-4d45-8265-751bf9a279b1" name="@NguyenMac 2026-04-24 15:41:16" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-04-24T15:41:16.1100440+07:00" queuing="2026-04-24T15:41:16.1100440+07:00" start="2026-04-24T15:40:42.3680600+07:00" finish="2026-04-24T15:41:16.1135310+07:00" />
+  <TestSettings name="default" id="9c320c89-9074-4357-88a0-f8eebd968211">
+    <Deployment runDeploymentRoot="_NguyenMac_2026-04-24_15_41_16" />
   </TestSettings>
   <Results>
-    <UnitTestResult executionId="20ed9aab-214a-46ff-aed3-019c485e616a" testId="fda70e26-a6e3-9286-97a8-2c298c1c6523" testName="EditPartNumberOfActiveStock_ValidPartNumber" computerName="NguyenMac" duration="00:00:44.3376220" startTime="2026-04-24T10:45:31.7384950+07:00" endTime="2026-04-24T10:46:16.0753710+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="20ed9aab-214a-46ff-aed3-019c485e616a">
+    <UnitTestResult executionId="00e84e4a-0934-47da-944d-29577687c99e" testId="fda70e26-a6e3-9286-97a8-2c298c1c6523" testName="EditPartNumberOfActiveStock_ValidPartNumber" computerName="NguyenMac" duration="00:00:33.3100020" startTime="2026-04-24T15:40:42.7290650+07:00" endTime="2026-04-24T15:41:16.0381820+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="00e84e4a-0934-47da-944d-29577687c99e">
       <Output>
         <StdOut>Navigate to: https://staging.peopletray.com
 Perform login...</StdOut>
         <ErrorInfo>
           <Message>System.TimeoutException : Timeout 30000ms exceeded.
 Call log:
-  - waiting for GetByText("bruhhh")</Message>
+  - waiting for Locator("button[id='btnSubmit']")
+    - locator resolved to &lt;button type="submit" id="btnSubmit" data-dismiss="modal" class="btn btn-flat btn-primary"&gt;Sign me in&lt;/button&gt;
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - performing click action
+    - click action done
+    - waiting for scheduled navigations to finish</Message>
           <StackTrace>   at Microsoft.Playwright.Transport.Connection.InnerSendMessageToServerAsync[T](ChannelOwner object, String method, Dictionary`2 dictionary, Boolean keepNulls) in /_/src/Playwright/Transport/Connection.cs:line 201
    at Microsoft.Playwright.Transport.Connection.WrapApiCallAsync[T](Func`1 action, Boolean isInternal, String title) in /_/src/Playwright/Transport/Connection.cs:line 499
-   at PeoTest.DemoTest.EditPartNumberOfActiveStock_ValidPartNumber() in /Users/nguyenquanganh/Peo_Test/src/testSuit/DemoTest/demoTest.cs:line 93
+   at PeoTest.LoginPage.Login(String email, String password) in /Users/nguyenquanganh/Peo_Test/src/pages/CommonPage/LoginPage.cs:line 30
+   at PeoTest.DemoTest.Setup() in /Users/nguyenquanganh/Peo_Test/src/testSuit/DemoTest/demoTest.cs:line 19
    at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
    at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
    at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(Func`1 invoke)
-   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
-   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.SetUpTearDownItem.RunSetUpOrTearDownMethod(TestExecutionContext context, IMethodInfo method)
+   at NUnit.Framework.Internal.Commands.SetUpTearDownItem.RunSetUp(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.SetUpTearDownCommand.&lt;&gt;c__DisplayClass0_0.&lt;.ctor&gt;b__0(TestExecutionContext context)
    at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.&lt;&gt;c__DisplayClass1_0.&lt;Execute&gt;b__0()
    at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
 </StackTrace>
@@ -30,12 +41,12 @@ Call log:
   </Results>
   <TestDefinitions>
     <UnitTest name="EditPartNumberOfActiveStock_ValidPartNumber" storage="/users/nguyenquanganh/peo_test/bin/debug/net8.0/testx.dll" id="fda70e26-a6e3-9286-97a8-2c298c1c6523">
-      <Execution id="20ed9aab-214a-46ff-aed3-019c485e616a" />
+      <Execution id="00e84e4a-0934-47da-944d-29577687c99e" />
       <TestMethod codeBase="/Users/nguyenquanganh/Peo_Test/bin/Debug/net8.0/TestX.dll" adapterTypeName="executor://nunit3testexecutor/" className="PeoTest.DemoTest" name="EditPartNumberOfActiveStock_ValidPartNumber" />
     </UnitTest>
   </TestDefinitions>
   <TestEntries>
-    <TestEntry testId="fda70e26-a6e3-9286-97a8-2c298c1c6523" executionId="20ed9aab-214a-46ff-aed3-019c485e616a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fda70e26-a6e3-9286-97a8-2c298c1c6523" executionId="00e84e4a-0934-47da-944d-29577687c99e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
   </TestEntries>
   <TestLists>
     <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
@@ -51,7 +62,7 @@ NUnit Adapter 4.5.0.0: Test execution complete
 </StdOut>
     </Output>
     <RunInfos>
-      <RunInfo computerName="NguyenMac" outcome="Warning" timestamp="2026-04-24T10:46:16.0871830+07:00">
+      <RunInfo computerName="NguyenMac" outcome="Warning" timestamp="2026-04-24T15:41:16.0500570+07:00">
         <Text>Navigate to: https://staging.peopletray.com
 Perform login...
 </Text>

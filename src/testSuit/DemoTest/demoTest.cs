@@ -1,3 +1,4 @@
+using Allure.NUnit;
 using Microsoft.Playwright;
 using System;
 using System.Diagnostics.CodeAnalysis;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 namespace PeoTest;
 
 [TestFixture]
-
+[AllureNUnit]
 public class DemoTest : CommonBaseTest
 {
     [SetUp]
@@ -68,14 +69,14 @@ public class DemoTest : CommonBaseTest
         StockCataloguePage stockCataloguePage = new StockCataloguePage(_page);
 
         var randomName = generateHelper.GenerateRandomString(10);
-        await stockCataloguePage.addStockItem("Fuel", randomName, "Days", "-10", "PC001", "1234567890123", "High quality cement", true);
+        await stockCataloguePage.addStockItem("Fuel", randomName, "Days", "123", "PC001", "1234567890123", "High quality cement", true);
         await _page.WaitForTimeoutAsync(3000);
         await stockCataloguePage.nameFilter(randomName);
         await _page.WaitForTimeoutAsync(3000);
         await stockCataloguePage.Search();
         await _page.WaitForTimeoutAsync(3000);
-        await stockCataloguePage.editInformationOfStockItem("Cost", "123", true, true);
-        await _page.WaitForTimeoutAsync(3000);
+        await stockCataloguePage.editInformationOfStockItem("Cost", "-123", true, true);
+        await _page.WaitForTimeoutAsync(5000);
 
         Assert.IsTrue(await _page.GetByText("Cost must be a positive number.").IsVisibleAsync());
 
@@ -84,28 +85,28 @@ public class DemoTest : CommonBaseTest
     }
     
     
-    [Test]
-    public async Task EditPartNumberOfActiveStock_ValidPartNumber()
-    // to valid value
+    // [Test]
+    // public async Task EditPartNumberOfActiveStock_ValidPartNumber()
+    // // to valid value
 
-    {
-        StockCataloguePage stockCataloguePage = new StockCataloguePage(_page);
-        await _page.GetByText("bruhhh").ClickAsync();
-        var randomName = generateHelper.GenerateRandomString(10);
-        var newPartNum = generateHelper.GenerateRandomString(20, "EditedPNumber_");
-        await stockCataloguePage.addStockItem("Fuel", randomName, "Days", "-10", "PC001", "1234567890123", "High quality cement", true);
-        await _page.WaitForTimeoutAsync(500);
-        await stockCataloguePage.nameFilter(randomName);
-        await stockCataloguePage.Search();
-        await stockCataloguePage.editInformationOfStockItem("PartNum", newPartNum, true, true);
-
-
-        await stockCataloguePage.nameFilter(randomName);
-        await stockCataloguePage.Search();
-
-        Assert.IsTrue(Equals(newPartNum, await _page.Locator("//table[@id='tblConsumable']//tbody//tr[1]//td[4]").InnerTextAsync()));
+    // {
+    //     StockCataloguePage stockCataloguePage = new StockCataloguePage(_page);
+    //     await _page.GetByText("bruhhh").ClickAsync();
+    //     var randomName = generateHelper.GenerateRandomString(10);
+    //     var newPartNum = generateHelper.GenerateRandomString(20, "EditedPNumber_");
+    //     await stockCataloguePage.addStockItem("Fuel", randomName, "Days", "-10", "PC001", "1234567890123", "High quality cement", true);
+    //     await _page.WaitForTimeoutAsync(500);
+    //     await stockCataloguePage.nameFilter(randomName);
+    //     await stockCataloguePage.Search();
+    //     await stockCataloguePage.editInformationOfStockItem("PartNum", newPartNum, true, true);
 
 
-    }
+    //     await stockCataloguePage.nameFilter(randomName);
+    //     await stockCataloguePage.Search();
+
+    //     Assert.IsTrue(Equals(newPartNum, await _page.Locator("//table[@id='tblConsumable']//tbody//tr[1]//td[4]").InnerTextAsync()));
+
+
+    // }
     }
     

@@ -24,7 +24,7 @@ FILTER="${3:-"DemoTest"}"
 RESULTS_DIR="${SCRIPT_DIR}/playwright-results"
 TRX_FILE="${RESULTS_DIR}/TestResult.trx"
 WEBHOOK_URL="${4:-"https://nobisoftvn.webhook.office.com/webhookb2/1b0d8698-1bd1-41ad-8260-5a63ff4fc3ae@dfd263e5-5cf1-42c9-947c-2722e7018c6b/IncomingWebhook/da0acfd5c2074ddaa9cd1fd37bfcc450/f8d45a56-b768-42df-86c2-c9e40f8545f4/V2oCTmbzi4hqIoSr5RhmmItF-qRC02XCYGO02oWqi29-01"}"
-
+ALLURE_PATH="bin/Debug/net8.0"
 mkdir -p "$RESULTS_DIR"
 
 # ── 1. Run tests ─────────────────────────────────────────────
@@ -47,8 +47,21 @@ dotnet test "$SLN_PATH" \
 EXIT_CODE=$?
 END_TS=$(date +%s)
 DURATION=$(( END_TS - START_TS ))
+# # ── Allure Report ────────────────────────────────────────────
+# ALLURE_RESULTS_DIR="${ALLURE_PATH}/allure-results"
+# ALLURE_REPORT_DIR="${ALLURE_PATH}/allure-report"
 
+# echo ">> Generating Allure report..."
 
+# # clean old
+# rm -rf "$ALLURE_REPORT_DIR"
+
+# # generate report
+# allure generate "$ALLURE_RESULTS_DIR" -o allure-report --clean || true
+
+# PORT=5050
+# nohup python3 -m http.server $PORT --directory "$ALLURE_REPORT_DIR" > /dev/null 2>&1 &
+# ALLURE_URL="http://localhost:$PORT"
 
 # ── 2. Parse TRX ─────────────────────────────────────────────
 TOTAL=0; PASSED=0; FAILED=0; SKIPPED=0
@@ -150,12 +163,12 @@ FACTS=$(cat <<EOF
 [
   {"name":"Status",        "value":"${STATUS_TEXT}"},
   {"name":"Total",         "value":"${TOTAL}"},
-  {"name":"[OK] Passed",   "value":"${PASSED}"},
-  {"name":"[FAIL] Failed", "value":"${FAILED}"},
-  {"name":"[SKIP] Skipped","value":"${SKIPPED}"},
-  {"name":"Duration",      "value":"${DURATION}s"},
+  {"name":"[Passed]",   "value":"${PASSED}"},
+  {"name":"[Failed]", "value":"${FAILED}"},
+  {"name":"[Skipped]","value":"${SKIPPED}"},
   {"name":"Run by",        "value":"${RUN_BY}@${HOSTNAME_VAL}"},
-  {"name":"Time",          "value":"${START_TIME}"}
+  {"name":"Time",          "value":"${START_TIME}"},
+  {"name":"AllureReport",          "value":"${ALLURE_URL}"}
 ]
 EOF
 )
@@ -164,7 +177,6 @@ SECTIONS=$(cat <<EOF
 [
   {
     "activityTitle":    "PeopleTray Playwright Tests",
-    "activitySubtitle": "Solution: $(basename "$SLN_PATH")",
     "facts":            ${FACTS},
     "markdown":         true
   }

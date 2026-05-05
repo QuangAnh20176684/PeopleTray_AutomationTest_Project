@@ -42,6 +42,7 @@ Open the generated report in your browser:
 open allure-report/index.html
 
 # Or serve it locally
+
 allure open allure-report
 ```
 
