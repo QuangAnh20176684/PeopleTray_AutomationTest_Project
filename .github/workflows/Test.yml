@@ -1,4 +1,6 @@
 name: Run Playwright Tests
+permissions:
+  contents: write
 
 on:
   # push:
@@ -7,7 +9,7 @@ on:
     workflow_dispatch:   # cho phép bấm chạy tay
     schedule:
     - cron: '0 19 * * 3'
-
+    
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -29,7 +31,9 @@ jobs:
 
     - name: Install Playwright browsers
       run: pwsh bin/Debug/net8.0/playwright.ps1 install
-    
+    - name: Run specific test class
+      run: ./run-by-module.sh
+      
     - name: Generate Allure Report
       run: |
           npm install -g allure-commandline --save-dev
@@ -42,5 +46,4 @@ jobs:
           publish_dir: ./allure-report
   
 
-    - name: Run specific test class
-      run: ./run-by-module.sh
+    
