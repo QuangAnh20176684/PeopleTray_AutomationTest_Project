@@ -168,7 +168,7 @@ FACTS=$(cat <<EOF
   {"name":"[Skipped]","value":"${SKIPPED}"},
   {"name":"Run by",        "value":"${RUN_BY}@${HOSTNAME_VAL}"},
   {"name":"Time",          "value":"${START_TIME}"},
-  {"name":"AllureReport",          "value":"${ALLURE_URL}"}
+
 ]
 EOF
 )
