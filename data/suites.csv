@@ -1,4 +1,4 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","671","Test","TestX","2026-05-05","broken","2026-05-05","DemoTest","PeoTest","DemoTest","Test"
-"","384","EditCostOfActiveStock_NegativeCost","TestX","2026-05-05","broken","2026-05-05","DemoTest","PeoTest","DemoTest","EditCostOfActiveStock_NegativeCost"
-"","489","AddStockItemWithValidData","TestX","2026-05-05","broken","2026-05-05","DemoTest","PeoTest","DemoTest","AddStockItemWithValidData"
+"","36571","EditCostOfActiveStock_NegativeCost","TestX","2026-05-05","broken","2026-05-05","DemoTest","PeoTest","DemoTest","EditCostOfActiveStock_NegativeCost"
+"","34167","AddStockItemWithValidData","TestX","2026-05-05","broken","2026-05-05","DemoTest","PeoTest","DemoTest","AddStockItemWithValidData"
+"","61725","Test","TestX","2026-05-05","passed","2026-05-05","DemoTest","PeoTest","DemoTest","Test"
