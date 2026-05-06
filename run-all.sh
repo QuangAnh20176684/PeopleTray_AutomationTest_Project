@@ -32,14 +32,14 @@ echo ""
 echo ">> Running Playwright tests..."
 echo "   Solution : $SLN_PATH"
 echo "   Settings : $RUNSETTINGS"
-echo "   Filter   : $FILTER"
+
 echo ""
 
 START_TS=$(date +%s)
 START_TIME=$(date "+%Y-%m-%d %H:%M:%S")
 
 dotnet test "$SLN_PATH" \
-    --filter "$FILTER" \
+    
     --settings "$RUNSETTINGS" \
     --logger "trx;LogFileName=TestResult.trx" \
     --results-directory "$RESULTS_DIR" || true
