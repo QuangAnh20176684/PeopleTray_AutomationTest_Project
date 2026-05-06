@@ -1,0 +1,71 @@
+name: Run Playwright Tests on some part
+permissions:
+  contents: write
+
+on:
+  # push:
+  #   branches: [ main ]
+  # pull_request:
+    workflow_dispatch:   # cho phép bấm chạy tay
+    schedule:
+    - cron: '0 19 * * 3'
+    
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.0.x'
+
+    - name: Restore
+      run: dotnet restore
+
+    - name: Build
+      run: dotnet build --no-restore
+
+    - name: Install Playwright browsers
+      run: pwsh bin/Debug/net8.0/playwright.ps1 install
+    - name: Make script executable
+      run: chmod +x run-by-module.sh
+    - name: Run specific test class
+      run: ./run-by-module.sh
+      continue-on-error: true
+   
+    - name: Checkout gh-pages (for history)
+      uses: actions/checkout@v4
+      with:
+        ref: gh-pages
+        path: gh-pages
+      continue-on-error: true
+      
+    - name: Copy history
+      run: |
+        mkdir -p bin/Debug/net8.0/allure-results/history
+        cp -r gh-pages/history/* bin/Debug/net8.0/allure-results/history || true
+      
+    - name: Generate Allure Report
+      if: always()
+      run: |
+        npm install -g allure-commandline --save-dev
+        allure generate bin/Debug/net8.0/allure-results --clean -o allure-report
+      
+    - name: Save history
+      run: |
+        mkdir -p gh-pages/history
+        cp -r allure-report/history/* gh-pages/history || true
+     
+    - name: Deploy to GitHub Pages
+      if: always()
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./allure-report
+      
+
+    
