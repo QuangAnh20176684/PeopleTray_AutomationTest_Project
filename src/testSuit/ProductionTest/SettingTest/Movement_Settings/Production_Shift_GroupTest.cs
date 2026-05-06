@@ -1,4 +1,5 @@
 using Microsoft.Playwright;
+using Allure.NUnit;
 using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 namespace PeoTest;
 
 [TestFixture]
-
+[AllureNUnit]
 public class Production_Shift_GroupTest : CommonBaseTest
 {
     [SetUp]
