@@ -1,4 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","17820","Test","TestX","2026-05-06","passed","2026-05-06","DemoTest","PeoTest","DemoTest","Test"
-"","21140","AddStockItemWithValidData","TestX","2026-05-06","passed","2026-05-06","DemoTest","PeoTest","DemoTest","AddStockItemWithValidData"
-"","35090","EditCostOfActiveStock_NegativeCost","TestX","2026-05-06","failed","2026-05-06","DemoTest","PeoTest","DemoTest","EditCostOfActiveStock_NegativeCost"
