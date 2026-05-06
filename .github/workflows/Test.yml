@@ -32,7 +32,7 @@ jobs:
     - name: Install Playwright browsers
       run: pwsh bin/Debug/net8.0/playwright.ps1 install
     - name: Run specific test class
-      run: ./run-by-module.sh
+      run: ./run-all.sh
       continue-on-error: true
    
     - name: Checkout gh-pages (for history)

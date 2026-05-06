@@ -4,6 +4,14 @@
 # Runs dotnet test (Playwright) and posts results to MS Teams
 # Usage: ./run-playwright-tests.sh [SLN_PATH] [RUNSETTINGS] [WEBHOOK_URL]
 # ============================================================
+jq_escape() {
+    local s="$1"
+    s="${s//\\/\\\\}"
+    s="${s//\"/\\\"}"
+    s="${s//$'\n'/\\n}"
+    s="${s//$'\r'/}"
+    printf '"%s"' "$s"
+}
 
 set -euo pipefail
 
@@ -16,7 +24,7 @@ RUNSETTINGS="${2:-"${SCRIPT_DIR}/.runsettings"}"
 RESULTS_DIR="${SCRIPT_DIR}/playwright-results"
 TRX_FILE="${RESULTS_DIR}/TestResult.trx"
 WEBHOOK_URL="${4:-"https://nobisoftvn.webhook.office.com/webhookb2/1b0d8698-1bd1-41ad-8260-5a63ff4fc3ae@dfd263e5-5cf1-42c9-947c-2722e7018c6b/IncomingWebhook/da0acfd5c2074ddaa9cd1fd37bfcc450/f8d45a56-b768-42df-86c2-c9e40f8545f4/V2oCTmbzi4hqIoSr5RhmmItF-qRC02XCYGO02oWqi29-01"}"
-
+ALLURE_PATH="bin/Debug/net8.0"
 mkdir -p "$RESULTS_DIR"
 
 # ── 1. Run tests ─────────────────────────────────────────────
@@ -24,7 +32,7 @@ echo ""
 echo ">> Running Playwright tests..."
 echo "   Solution : $SLN_PATH"
 echo "   Settings : $RUNSETTINGS"
-
+echo "   Filter   : $FILTER"
 echo ""
 
 START_TS=$(date +%s)
@@ -39,14 +47,29 @@ dotnet test "$SLN_PATH" \
 EXIT_CODE=$?
 END_TS=$(date +%s)
 DURATION=$(( END_TS - START_TS ))
+# # ── Allure Report ────────────────────────────────────────────
+# ALLURE_RESULTS_DIR="${ALLURE_PATH}/allure-results"
+# ALLURE_REPORT_DIR="${ALLURE_PATH}/allure-report"
+
+# echo ">> Generating Allure report..."
+
+# # clean old
+# rm -rf "$ALLURE_REPORT_DIR"
+
+# # generate report
+# allure generate "$ALLURE_RESULTS_DIR" -o allure-report --clean || true
+
+# PORT=5050
+# nohup python3 -m http.server $PORT --directory "$ALLURE_REPORT_DIR" > /dev/null 2>&1 &
+# ALLURE_URL="http://localhost:$PORT"
 
 # ── 2. Parse TRX ─────────────────────────────────────────────
 TOTAL=0; PASSED=0; FAILED=0; SKIPPED=0
 FAILED_TESTS_JSON="[]"
 
 if [[ -f "$TRX_FILE" ]]; then
-    # Extract Counters attributes using grep + sed (no xmllint dependency)
-    COUNTERS_LINE=$(grep -o '<Counters[^/]*/>' "$TRX_FILE" | head -1 || true)
+    # 👉 đọc counters an toàn (multi-line)
+    COUNTERS_LINE=$(tr -d '\n' < "$TRX_FILE" | grep -o '<Counters[^>]*>' || true)
 
     extract_attr() {
         echo "$COUNTERS_LINE" | grep -o "${1}=\"[0-9]*\"" | grep -o '[0-9]*' || echo "0"
@@ -59,23 +82,56 @@ if [[ -f "$TRX_FILE" ]]; then
     ABORTED=$(extract_attr "aborted")
     SKIPPED=$(( NOT_EXEC + ABORTED ))
 
-    # Collect failed test names and truncated messages (max 10)
+    echo ">> Parsing failed tests..."
+
     FAILED_TESTS_JSON="["
     FIRST=1
     COUNT=0
+
+    # ⚠️ tắt set -e tạm để tránh crash
+    set +e
+
     while IFS= read -r block; do
         [[ $COUNT -ge 10 ]] && break
-        test_name=$(echo "$block" | grep -o 'testName="[^"]*"' | sed 's/testName="//;s/"//' | sed 's/.*\.//')
-        message=$(echo "$block" | grep -o '<Message>[^<]*</Message>' | sed 's/<Message>//;s/<\/Message>//' | tr '\n' ' ' | cut -c1-200)
+
+        # 👉 lấy test name
+        test_name=$(echo "$block" \
+            | grep -o 'testName="[^"]*"' \
+            | sed 's/testName="//;s/"//' \
+            | sed 's/.*\.//')
+
+        # 👉 lấy message (multi-line safe)
+        message=$(echo "$block" \
+            | awk '/<Message>/,/<\/Message>/' \
+            | sed '1s/.*<Message>//' \
+            | sed '$s/<\/Message>.*//' \
+            | tr '\n' ' ' \
+            | sed 's/  */ /g' \
+            | cut -c1-200)
+
         entry="{\"name\":$(jq_escape "$test_name"),\"msg\":$(jq_escape "$message")}"
+
         if [[ $FIRST -eq 1 ]]; then
             FAILED_TESTS_JSON+="$entry"
             FIRST=0
         else
             FAILED_TESTS_JSON+=",$entry"
         fi
+
         COUNT=$(( COUNT + 1 ))
-    done < <(grep -o '<UnitTestResult[^>]*outcome="Failed"[^>]*>.*</UnitTestResult>' "$TRX_FILE" 2>/dev/null || true)
+
+    done < <(
+        awk '
+        /<UnitTestResult / {capture=1; block=""}
+        capture {block=block $0 "\n"}
+        /<\/UnitTestResult>/ {
+            if (block ~ /outcome="Failed"/) print block
+            capture=0
+        }' "$TRX_FILE" 2>/dev/null || true
+    )
+
+    set -e
+
     FAILED_TESTS_JSON+="]"
 else
     echo "WARNING: TRX file not found: $TRX_FILE"
@@ -105,14 +161,15 @@ HOSTNAME_VAL=$(hostname)
 
 FACTS=$(cat <<EOF
 [
-  {"name":"Status",        "value":"${STATUS_TEXT}"},
+  
   {"name":"Total",         "value":"${TOTAL}"},
-  {"name":"[OK] Passed",   "value":"${PASSED}"},
-  {"name":"[FAIL] Failed", "value":"${FAILED}"},
-  {"name":"[SKIP] Skipped","value":"${SKIPPED}"},
-  {"name":"Duration",      "value":"${DURATION}s"},
+  {"name":"[Passed]",   "value":"${PASSED}"},
+  {"name":"[Failed]", "value":"${FAILED}"},
+  {"name":"[Skipped]","value":"${SKIPPED}"},
   {"name":"Run by",        "value":"${RUN_BY}@${HOSTNAME_VAL}"},
-  {"name":"Time",          "value":"${START_TIME}"}
+  {"name":"Time",          "value":"${START_TIME}"},
+  {"name":"Report",          "value":"https://quanganh20176684.github.io/PeopleTray_AutomationTest_Project/"},
+
 ]
 EOF
 )
@@ -121,7 +178,6 @@ SECTIONS=$(cat <<EOF
 [
   {
     "activityTitle":    "PeopleTray Playwright Tests",
-    "activitySubtitle": "Solution: $(basename "$SLN_PATH")",
     "facts":            ${FACTS},
     "markdown":         true
   }
@@ -140,24 +196,66 @@ PAYLOAD=$(cat <<EOF
 EOF
 )
 
+
 # Append failed test details section if any
+
 if [[ $FAILED -gt 0 ]]; then
     DETAIL_TEXT=""
-    # Re-parse failed tests for detail text
     count=0
+
+    set +e
+
     while IFS= read -r block; do
         [[ $count -ge 10 ]] && break
-        tname=$(echo "$block" | grep -o 'testName="[^"]*"' | sed 's/testName="//;s/"//' | sed 's/.*\.//')
-        tmsg=$(echo "$block" | grep -o '<Message>[^<]*</Message>' | sed 's/<Message>//;s/<\/Message>//' | tr '\n' ' ' | cut -c1-200)
-        if [[ -n "$DETAIL_TEXT" ]]; then DETAIL_TEXT+="\\n\\n"; fi
-        DETAIL_TEXT+="**${tname}**"
-        if [[ -n "$tmsg" ]]; then DETAIL_TEXT+=": ${tmsg}"; fi
+
+        # 👉 lấy test name
+        tname=$(echo "$block" \
+            | grep -o 'testName="[^"]*"' \
+            | sed 's/testName="//;s/"//' \
+            | sed 's/.*\.//')
+
+        # 👉 lấy message (multi-line safe)
+        tmsg=$(echo "$block" \
+            | awk '/<Message>/,/<\/Message>/' \
+            | sed '1s/.*<Message>//' \
+            | sed '$s/<\/Message>.*//' \
+            | tr '\n' ' ' \
+            | sed 's/  */ /g' \
+            | cut -c1-200)
+        if [[ "$tmsg" == *"Timeout"* ]]; then
+    tmsg="Timeout waiting for element"
+fi
+        # 👉 build text (escape newline cho JSON)
+       
+        if [[ -n "$DETAIL_TEXT" ]]; then
+    DETAIL_TEXT+="\\n"
+fi
+
+DETAIL_TEXT+="- ${tname} - FAILED"
+
+if [[ -n "$tmsg" ]]; then
+    DETAIL_TEXT+=" - ${tmsg}"
+fi
+
         count=$(( count + 1 ))
-    done < <(grep -o '<UnitTestResult[^>]*outcome="Failed"[^>]*>.*</UnitTestResult>' "$TRX_FILE" 2>/dev/null || true)
+
+    
+    done < <(
+    awk '
+    /<UnitTestResult / {capture=1; block=""}
+    capture {block = block $0 " "}
+    /<\/UnitTestResult>/ {
+        if (block ~ /outcome="Failed"/) print block
+        capture=0
+    }' "$TRX_FILE" 2>/dev/null || true
+)
+
+    set -e
 
     if [[ $FAILED -gt 10 ]]; then
         DETAIL_TEXT+="\\n\\n_… and $(( FAILED - 10 )) more failed test(s)_"
     fi
+    
 
     FAILED_SECTION=$(cat <<EOF
 ,
@@ -168,10 +266,13 @@ if [[ $FAILED -gt 0 ]]; then
   }
 EOF
 )
-    # Insert failed section before closing ]
+
+
+    # 👉 insert section (giữ logic cũ của bạn)
     PAYLOAD="${PAYLOAD%\}}"
     PAYLOAD=$(echo "$PAYLOAD" | sed 's/\]$//')
     PAYLOAD+="${FAILED_SECTION}]}"
+   
 fi
 
 # ── 4. Send to Teams ──────────────────────────────────────────
