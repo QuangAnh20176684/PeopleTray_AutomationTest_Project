@@ -1,0 +1,3 @@
+Navigate to: https://staging.peopletray.com
+Perform login...
+Checking value: ShiftName_iFWe9 against filter: ShiftName_iFWe9

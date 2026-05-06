@@ -1,5 +1,0 @@
-Navigate to: https://staging.peopletray.com
-Perform login...
-Checking value: Fuel against filter: Fuel
-Checking value: syQ612SYXZ against filter: syQ612SYXZ
-Checking value: PC001 against filter: PC001
