@@ -31,6 +31,8 @@ jobs:
 
     - name: Install Playwright browsers
       run: pwsh bin/Debug/net8.0/playwright.ps1 install
+    - name: Make script executable
+      run: chmod +x run-all.sh
     - name: Run specific test class
       run: ./run-all.sh
       continue-on-error: true
