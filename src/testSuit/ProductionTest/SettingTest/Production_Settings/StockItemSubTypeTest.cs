@@ -1,4 +1,5 @@
 using Microsoft.Playwright;
+using Allure.NUnit;
 using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Security.Cryptography;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 namespace PeoTest;
 
 [TestFixture]
-
+[AllureNUnit]
 public class StockItemSubTypeTest : CommonBaseTest
 {
     [SetUp]
