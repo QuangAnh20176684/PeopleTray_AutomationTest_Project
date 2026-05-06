@@ -1,3 +1,4 @@
+using Allure.NUnit;
 using Microsoft.Playwright;
 using System;
 using System.Diagnostics.CodeAnalysis;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 namespace PeoTest;
 
 [TestFixture]
-
+[AllureNUnit]
 public class DrillbitsTest : CommonBaseTest
 {
     [SetUp]
