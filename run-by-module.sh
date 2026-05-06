@@ -20,7 +20,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 SLN_PATH="${1:-"${SCRIPT_DIR}/TestX.sln"}"
 RUNSETTINGS="${2:-"${SCRIPT_DIR}/.runsettings"}"
-FILTER="${3:-"DrillbitsTest"}"
+FILTER="${3:-"Production_Shift_GroupTest"}"
 RESULTS_DIR="${SCRIPT_DIR}/playwright-results"
 TRX_FILE="${RESULTS_DIR}/TestResult.trx"
 WEBHOOK_URL="${4:-"https://nobisoftvn.webhook.office.com/webhookb2/1b0d8698-1bd1-41ad-8260-5a63ff4fc3ae@dfd263e5-5cf1-42c9-947c-2722e7018c6b/IncomingWebhook/da0acfd5c2074ddaa9cd1fd37bfcc450/f8d45a56-b768-42df-86c2-c9e40f8545f4/V2oCTmbzi4hqIoSr5RhmmItF-qRC02XCYGO02oWqi29-01"}"
@@ -161,7 +161,7 @@ HOSTNAME_VAL=$(hostname)
 
 FACTS=$(cat <<EOF
 [
-  {"name":"Status",        "value":"${STATUS_TEXT}"},
+  
   {"name":"Total",         "value":"${TOTAL}"},
   {"name":"[Passed]",   "value":"${PASSED}"},
   {"name":"[Failed]", "value":"${FAILED}"},
