@@ -1,3 +1,0 @@
-Navigate to: https://staging.peopletray.com
-Perform login...
-Checking value: ShiftName_cnZNn against filter: ShiftName_cnZNn

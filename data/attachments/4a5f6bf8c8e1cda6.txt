@@ -1,0 +1,5 @@
+Navigate to: https://staging.peopletray.com
+Perform login...
+Checking value: Fuel against filter: Fuel
+Checking value: nIFq2akGke against filter: nIFq2akGke
+Checking value: PC001 against filter: PC001

@@ -1,0 +1,26 @@
+Navigate to: https://staging.peopletray.com
+Perform login...
+Category: Fuel, Name: 00KPHuTRRF, Unit: Days, Cost: -10, PartNum: PC001, QRcode: , Description: High quality cement, SubType: Configure
+Category: Fuel, Name: 0JoLPoduS4_edited, Unit: Days, Cost: 250.5, PartNum: PC001, QRcode: , Description: High quality cement, SubType: 10 inch,10 m3,LPG 95,RC Resharpen Bit,PCS,NC2 BD5,LPG 98,Drums
+Configure
+Category: Fuel, Name: 0xP5I_!@#$%, Unit: Days, Cost: 100, PartNum: SPECIALSy, QRcode: , Description: Special chars test, SubType: RC Hammer,Bit 130mm - 5" 1/8,Bit 104mm - 4" 1/10,Bit 121mm - 4" 3/4
+Configure
+Category: Fuel, Name: 0XXAEpRblj, Unit: Days, Cost: 123, PartNum: PC001, QRcode: , Description: High quality cement, SubType: Bit 118mm - 4" 5/8
+Configure
+Category: Fuel, Name: 0YR5dzBmqp, Unit: Days, Cost: -10, PartNum: PC001, QRcode: , Description: EditedDesc_kUh5XpNZfmMjuwky2Qzx, SubType: Configure
+Category: Fuel, Name: 118BObXNZF, Unit: Days, Cost: -10, PartNum: PC001, QRcode: , Description: High quality cement, SubType: Bit 143mm - 5" 5/8
+Configure
+Category: Fuel, Name: 11gAg5X7cb, Unit: Days, Cost: 100, PartNum: PC001, QRcode: , Description: High quality cement, SubType: Configure
+Category: Fuel, Name: 1oVJX8jKCn, Unit: Days, Cost: 0, PartNum: PC001, QRcode: , Description: Test, SubType: Configure
+Category: Fuel, Name: 1TAfNSRx2C, Unit: Days, Cost: 123, PartNum: PC001, QRcode: , Description: High quality cement, SubType: Configure
+Category: Fuel, Name: 1WwNGM5dmI, Unit: Days, Cost: -10, PartNum: , QRcode: , Description: High quality cement, SubType: Bit 118mm - 4" 5/8
+Configure
+Category: Fuel, Name: 25jOsMC92D, Unit: Days, Cost: -10, PartNum: PC001, QRcode: , Description: High quality cement, SubType: Configure
+Category: Fuel, Name: 25QLC5cprD, Unit: Days, Cost: 100, PartNum: PC001, QRcode: , Description: High quality cement, SubType: Bit 133mm - 5" 1/4
+Configure
+Category: Fuel, Name: 2dDwQCESun, Unit: Days, Cost: -100, PartNum: PC001, QRcode: , Description: Test, SubType: Hammer 4.5
+Configure
+Category: Fuel, Name: 2fp5AXdyrS, Unit: Days, Cost: 123, PartNum: PC001, QRcode: , Description: High quality cement, SubType: Bit 136mm - 5" 3/8
+Configure
+Category: Fuel, Name: 2qV4pqzp8R, Unit: Days, Cost: -10, PartNum: PC001, QRcode: , Description: High quality cement, SubType: Rods,RC New Bit,Bit 140mm - 5" 1/2
+Configure
