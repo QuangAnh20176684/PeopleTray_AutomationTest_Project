@@ -32,14 +32,12 @@ echo ""
 echo ">> Running Playwright tests..."
 echo "   Solution : $SLN_PATH"
 echo "   Settings : $RUNSETTINGS"
-
 echo ""
 
 START_TS=$(date +%s)
 START_TIME=$(date "+%Y-%m-%d %H:%M:%S")
 
 dotnet test "$SLN_PATH" \
-    
     --settings "$RUNSETTINGS" \
     --logger "trx;LogFileName=TestResult.trx" \
     --results-directory "$RESULTS_DIR" || true
@@ -168,7 +166,7 @@ FACTS=$(cat <<EOF
   {"name":"[Skipped]","value":"${SKIPPED}"},
   {"name":"Run by",        "value":"${RUN_BY}@${HOSTNAME_VAL}"},
   {"name":"Time",          "value":"${START_TIME}"},
-  {"name":"Report",          "value":"https://quanganh20176684.github.io/PeopleTray_AutomationTest_Project/"},
+  {"name":"Report",          "value":"https://quanganh20176684.github.io/PeopleTray_AutomationTest_Project/"}
 
 ]
 EOF
