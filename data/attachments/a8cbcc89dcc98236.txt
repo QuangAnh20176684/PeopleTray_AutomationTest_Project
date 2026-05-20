@@ -1,3 +1,0 @@
-Navigate to: https://staging.peopletray.com
-Perform login...
-Checking value: M8arj9gkyJ against filter: M8arj9gkyJ

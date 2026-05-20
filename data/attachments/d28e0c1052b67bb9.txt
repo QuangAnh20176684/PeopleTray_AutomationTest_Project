@@ -1,3 +1,0 @@
-Navigate to: https://staging.peopletray.com
-Perform login...
-Checking value: lgl86qa4M0 against filter: lgl86qa4M0
