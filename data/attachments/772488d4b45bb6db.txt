@@ -1,3 +1,0 @@
-Navigate to: https://staging.peopletray.com
-Perform login...
-Checking value: f6LFWi8mP3 against filter: f6LFWi8mP3

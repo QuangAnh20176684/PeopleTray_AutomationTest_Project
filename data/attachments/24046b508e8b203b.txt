@@ -1,3 +1,0 @@
-Navigate to: https://staging.peopletray.com
-Perform login...
-Checking value: InactiveUpdated_WDi10C7OLE against filter: InactiveUpdated_WDi10C7OLE
