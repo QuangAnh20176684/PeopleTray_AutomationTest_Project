@@ -1,3 +1,0 @@
-Navigate to: https://staging.peopletray.com
-Perform login...
-Checking value: kVXx7S8pla against filter: kVXx7S8pla
