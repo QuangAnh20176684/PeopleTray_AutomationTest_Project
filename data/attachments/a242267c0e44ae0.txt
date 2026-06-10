@@ -1,3 +1,0 @@
-Navigate to: https://staging.peopletray.com
-Perform login...
-Checking value: lG62NMVPRW against filter: lG62NMVPRW
