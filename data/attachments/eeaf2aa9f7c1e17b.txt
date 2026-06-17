@@ -1,3 +1,0 @@
-Navigate to: https://staging.peopletray.com
-Perform login...
-Checking value: V56hhPJnp3 against filter: V56hhPJnp3

@@ -1,3 +1,0 @@
-Navigate to: https://staging.peopletray.com
-Perform login...
-Checking value: XIZZit8X3w against filter: XIZZit8X3w

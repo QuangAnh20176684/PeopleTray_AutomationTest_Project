@@ -1,3 +1,0 @@
-Navigate to: https://staging.peopletray.com
-Perform login...
-Checking value: B8nNSYPCiv against filter: B8nNSYPCiv
