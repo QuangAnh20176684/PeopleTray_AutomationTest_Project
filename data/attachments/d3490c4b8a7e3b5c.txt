@@ -1,3 +1,0 @@
-Navigate to: https://staging.peopletray.com
-Perform login...
-Checking value: sPMBPVp9TI against filter: sPMBPVp9TI
