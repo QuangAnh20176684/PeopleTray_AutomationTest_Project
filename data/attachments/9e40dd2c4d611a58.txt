@@ -1,3 +1,0 @@
-Navigate to: https://staging.peopletray.com
-Perform login...
-Checking value: ShiftName_O0NRx against filter: ShiftName_O0NRx
