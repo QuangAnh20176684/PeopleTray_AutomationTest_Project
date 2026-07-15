@@ -1,3 +1,0 @@
-Navigate to: https://staging.peopletray.com
-Perform login...
-Checking value: otjWdyk3wo against filter: otjWdyk3wo

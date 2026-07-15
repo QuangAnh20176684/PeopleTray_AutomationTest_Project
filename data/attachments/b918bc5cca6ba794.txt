@@ -1,3 +1,0 @@
-Navigate to: https://staging.peopletray.com
-Perform login...
-Checking value: InactiveUpdated_Slem25iVcc against filter: InactiveUpdated_Slem25iVcc
