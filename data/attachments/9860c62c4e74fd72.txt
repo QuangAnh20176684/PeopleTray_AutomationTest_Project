@@ -1,0 +1,3 @@
+Navigate to: https://staging.peopletray.com
+Perform login...
+Checking value: JR1HmIxkIJ against filter: JR1HmIxkIJ
