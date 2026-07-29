@@ -1,3 +1,0 @@
-Navigate to: https://staging.peopletray.com
-Perform login...
-Checking value: 4dNd6PhjjE against filter: 4dNd6PhjjE
