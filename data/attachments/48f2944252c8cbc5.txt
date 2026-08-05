@@ -1,3 +1,0 @@
-Navigate to: https://staging.peopletray.com
-Perform login...
-Checking value: 60WwxgBdh5 against filter: 60WwxgBdh5

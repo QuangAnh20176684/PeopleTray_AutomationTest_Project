@@ -1,3 +1,0 @@
-Navigate to: https://staging.peopletray.com
-Perform login...
-Checking value: Nb2mG1rSXk against filter: Nb2mG1rSXk

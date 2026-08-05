@@ -1,3 +1,0 @@
-Navigate to: https://staging.peopletray.com
-Perform login...
-Checking value: SVnYGyG1Bs_!@# against filter: SVnYGyG1Bs_!@#
