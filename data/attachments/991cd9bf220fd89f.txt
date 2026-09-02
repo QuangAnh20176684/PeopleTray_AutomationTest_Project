@@ -1,3 +1,0 @@
-Navigate to: https://staging.peopletray.com
-Perform login...
-Checking value: Updated_30HWk6ndtx against filter: Updated_30HWk6ndtx
