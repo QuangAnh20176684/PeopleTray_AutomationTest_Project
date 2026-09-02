@@ -1,0 +1,30 @@
+Navigate to: https://staging.peopletray.com
+Perform login...
+Category: Fuel, Name: 00KPHuTRRF, Unit: Days, Cost: -10, PartNum: PC001, QRcode: , Description: High quality cement, SubType: Configure
+Category: Fuel, Name: 05Mu20YeY8, Unit: Days, Cost: -10, PartNum: PC001, QRcode: , Description: High quality cement, SubType: RC New Bit
+Configure
+Category: Fuel, Name: 0CswzDqYB5, Unit: Days, Cost: -10, PartNum: PC001, QRcode: , Description: High quality cement, SubType: Tons,Bit 138mm - 5" 7/16,Hammer 4.5,RC New Bit
+Configure
+Category: Fuel, Name: 0dWJMuYvcr, Unit: Days, Cost: 100, PartNum: PC001, QRcode: , Description: VeryLongDescription_hIC6Wu6hyCl4OcIyARqgOU08jh1JMKFwDApe9PLmXY6ygPFyDkGYvY4WO85Nr7B8i8PEuFSTcoBfsGgyxR94rlgE4E7QxryJubXBYGjwc0tJ5bvSq73WAUEPzQecSweb7K4R6dl2AKfLUopKIIiavEv7RNrSFZLOWy7wnBrzyXd8qOJFIImlpFvTOSL6ufwK4KbIzayTy2j0zDhT2vT6sb0fqpY29kbBWXFH7EW63fxskpuQtcRztDA2D0UwSenmLbFBsN5dIbeOxCEt7VQvTKJ21Hnzw1hwmSL1EbXhGsem, SubType: Bit 118mm - 4" 5/8,Clear Glass,Litres
+Configure
+Category: Fuel, Name: 0JoLPoduS4_edited, Unit: Days, Cost: 250.5, PartNum: PC001, QRcode: , Description: High quality cement, SubType: 10 inch,10 m3,LPG 95,RC Resharpen Bit,PCS,NC2 BD5,LPG 98,Drums,Shoud
+Configure
+Category: Fuel, Name: 0S77wcA97n, Unit: Days, Cost: -10, PartNum: PC001, QRcode: , Description: High quality cement, SubType: 8 inch,BC BD3,Drums,NQ,HC3 BD7
+Configure
+Category: Fuel, Name: 0sDiqx7KNY, Unit: Days, Cost: -10, PartNum: EditedPNumber_9ParXo2AaxQmmuzyPy8B, QRcode: , Description: High quality cement, SubType: Clay,100 m3
+Configure
+Category: Fuel, Name: 0wP4QxjsBD, Unit: Days, Cost: 100, PartNum: PC001, QRcode: , Description: Test, SubType: AdBlue,Type 3,Rods,Rock
+Configure
+Category: Fuel, Name: 0xP5I_!@#$%, Unit: Days, Cost: 100, PartNum: SPECIALSy, QRcode: , Description: Special chars test, SubType: RC Hammer,Bit 130mm - 5" 1/8,Bit 104mm - 4" 1/10,Bit 121mm - 4" 3/4,Shoud,PCS,NC BD5,RC New Bit,4 inch
+Configure
+Category: Fuel, Name: 0XXAEpRblj, Unit: Days, Cost: 123, PartNum: PC001, QRcode: , Description: High quality cement, SubType: Shanks - Metzke,Small,Bit 118mm - 4" 5/8,CAT Coolant Litres ,RC New Bit,LPG 98
+Configure
+Category: Fuel, Name: 0YR5dzBmqp, Unit: Days, Cost: -10, PartNum: PC001, QRcode: , Description: EditedDesc_kUh5XpNZfmMjuwky2Qzx, SubType: 10 m3,Type 1,Bit 146mm - 5" 3/4
+Configure
+Category: Fuel, Name: 118BObXNZF, Unit: Days, Cost: -10, PartNum: PC001, QRcode: , Description: High quality cement, SubType: Bit 143mm - 5" 5/8,Type 1,Drive-Sub
+Configure
+Category: Fuel, Name: 11gAg5X7cb, Unit: Days, Cost: 100, PartNum: PC001, QRcode: , Description: High quality cement, SubType: Bit 127mm - 5" ,HQ,Drive-Sub,4 inch
+Configure
+Category: Consumable, Name: 15pQwMgHNz, Unit: Days, Cost: -10, PartNum: PC001, QRcode: , Description: High quality cement, SubType: Smoked Glass
+Configure
+Category: Fuel, Name: 1EhTaDyW1n, Unit: Litres, Cost: 100, PartNum: PC001, QRcode: , Description: Test, SubType: Configure

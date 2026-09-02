@@ -1,0 +1,36 @@
+Navigate to: https://staging.peopletray.com
+Perform login...
+Checking value: ShiftName_05tYy against filter: day
+Checking value: Description_KXY4yvHkFk against filter: day
+Checking value: Dayshift
+Configure against filter: day
+Checking value: Dayshift
+Configure against filter: day
+Checking value: Nightshift
+Dayshift
+Configure against filter: day
+Checking value: Dayshift
+Configure against filter: day
+Checking value: Dayshift
+Configure against filter: day
+Checking value: Dayshift
+Configure against filter: day
+Checking value: Dayshift
+Configure against filter: day
+Checking value: Dayshift
+Day
+Configure against filter: day
+Checking value: Dayshift
+Configure against filter: day
+Checking value: Dayshift
+Configure against filter: day
+Checking value: Dayshift
+Configure against filter: day
+Checking value: Dayshift
+Configure against filter: day
+Checking value: Dayshift
+Configure against filter: day
+Checking value: Dayshift
+Configure against filter: day
+Checking value: Dayshift
+Configure against filter: day

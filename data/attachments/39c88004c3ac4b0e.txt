@@ -1,0 +1,3 @@
+Navigate to: https://staging.peopletray.com
+Perform login...
+Checking value: BGa7TRcDil against filter: BGa7TRcDil
