@@ -1,3 +1,0 @@
-Navigate to: https://staging.peopletray.com
-Perform login...
-Checking value: ShiftName_t0aVg against filter: ShiftName_t0aVg
