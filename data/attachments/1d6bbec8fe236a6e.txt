@@ -1,3 +1,0 @@
-Navigate to: https://staging.peopletray.com
-Perform login...
-Checking value: vy4RU57VlO_!@# against filter: vy4RU57VlO_!@#
