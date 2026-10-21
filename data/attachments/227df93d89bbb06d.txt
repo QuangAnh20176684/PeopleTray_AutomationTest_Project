@@ -1,3 +1,0 @@
-Navigate to: https://staging.peopletray.com
-Perform login...
-Checking value: VeryLongName_PqYqQ6JlUpWGD2olq1bn5eByOFwFYGHu3WZuExNKwuCysE67wM4DSy9uj2lDnJEfm0kwNvyS6FuROJbY1vmGvy0VtJ2aQ9zLDUCU against filter: VeryLongName_PqYqQ6JlUpWGD2olq1bn5eByOFwFYGHu3WZuExNKwuCysE67wM4DSy9uj2lDnJEfm0kwNvyS6FuROJbY1vmGvy0VtJ2aQ9zLDUCU

@@ -1,3 +1,0 @@
-Navigate to: https://staging.peopletray.com
-Perform login...
-Checking value: InactiveUpdated_L8XL7PQ8fQ against filter: InactiveUpdated_L8XL7PQ8fQ
